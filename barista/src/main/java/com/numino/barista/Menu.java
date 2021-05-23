@@ -1,12 +1,14 @@
 package com.numino.barista;
 
-import static com.adelean.inject.resources.core.InjectResources.resource;
-
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonParser;
@@ -22,31 +24,36 @@ public class Menu {
 		stocks = fetchStock();
 		recipes = fetchRecipes();
 
-		char choice;
-		do {
-			var recipeCnt = prepareMenu();
-			choice = input.next().toLowerCase().charAt(0);
+		if (this.stocks.size() > 0 && this.recipes.size() > 0) {
+			char choice;
+			do {
+				var recipeCnt = prepareMenu();
+				choice = input.next().toLowerCase().charAt(0);
 
-			Util.clearScreen();
-			if (choice == 'r') {
-				if (restock()) {
-					Util.ln("Ingredients restocked.");
-				} else {
-					Util.ln("Issue with restocking!");
-				}
-			} else if (choice == 'q') {
-				Util.ln("Exiting application.");
-			} else if (Character.isDigit(choice)) {
-				int drinkItem = choice - '0';
-				if (drinkItem > 0 && drinkItem <= recipeCnt) {
-					processOrder(drinkItem);
+				Util.clearScreen();
+				if (choice == 'r') {
+					if (restock()) {
+						Util.ln("Ingredients restocked.");
+					} else {
+						Util.ln("Issue with restocking!");
+					}
+				} else if (choice == 'q') {
+					Util.ln("Exiting application.");
+				} else if (Character.isDigit(choice)) {
+					int drinkItem = choice - '0';
+					if (drinkItem > 0 && drinkItem <= recipeCnt) {
+						processOrder(drinkItem);
+					} else {
+						Util.ln("Invalid selection: " + choice + ". Try again.");
+					}
 				} else {
 					Util.ln("Invalid selection: " + choice + ". Try again.");
 				}
-			} else {
-				Util.ln("Invalid selection: " + choice + ". Try again.");
-			}
-		} while (choice != 'q');
+			} while (choice != 'q');
+		} else {
+			Util.ln((Object) "No ingredients or recipes found.");
+		}
+
 	}
 
 	private int prepareMenu() {
@@ -123,7 +130,7 @@ public class Menu {
 
 	private List<Stock> fetchStock() {
 		try {
-			var ingredientsText = resource().withPath("ingredients.json").text();
+			var ingredientsText = getContents();// resource().withPath("ingredients.json").text();
 			var ingredientsJson = JsonParser.parseString(ingredientsText).getAsJsonObject();
 			var stocksArray = ingredientsJson.get("stock");
 
@@ -138,7 +145,7 @@ public class Menu {
 
 	private List<Recipe> fetchRecipes() {
 		try {
-			var recipesText = resource().withPath("ingredients.json").text();
+			var recipesText = getContents();// resource().withPath("ingredients.json").text();
 			var recipesJson = JsonParser.parseString(recipesText).getAsJsonObject();
 			var recipesArray = recipesJson.get("recipes");
 
@@ -149,5 +156,16 @@ public class Menu {
 			// TODO: handle exception
 		}
 		return new ArrayList<Recipe>();
+	}
+
+	private String getContents() {
+		String data = "";
+		try (InputStream inputStream = getClass().getResourceAsStream("/ingredients.json");
+				BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream))) {
+			data = reader.lines().collect(Collectors.joining(System.lineSeparator()));
+		} catch (Exception e) {
+
+		}
+		return data;
 	}
 }
