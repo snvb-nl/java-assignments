@@ -1,4 +1,4 @@
-package com.numino.barista;
+package com.numino.barista.menu;
 
 import java.io.BufferedReader;
 import java.io.InputStream;
@@ -13,6 +13,9 @@ import java.util.stream.Collectors;
 import com.google.gson.Gson;
 import com.google.gson.JsonParser;
 import com.google.gson.reflect.TypeToken;
+import com.numino.barista.models.Recipe;
+import com.numino.barista.models.Stock;
+import com.numino.barista.utility.Util;
 
 public class Menu {
 
@@ -56,7 +59,7 @@ public class Menu {
 
 	}
 
-	private int prepareMenu() {
+	int prepareMenu() {
 		Util.ln("Ingredients:");
 		stocks.forEach((stock) -> {
 			Util.ln(stock.getName() + " - " + stock.getStock());
@@ -86,7 +89,7 @@ public class Menu {
 		return recipeCnt;
 	}
 
-	private boolean restock() {
+	boolean restock() {
 		try {
 			if (stocks.size() > 0) {
 				for (Stock stock : stocks) {
@@ -101,7 +104,7 @@ public class Menu {
 		return false;
 	}
 
-	private void processOrder(int drinkNo) {
+	void processOrder(int drinkNo) {
 		var drink = recipes.get(drinkNo - 1);
 		Map<String, Integer> inStockIngredients = new HashMap<String, Integer>();
 		boolean isInStock = true;
@@ -128,9 +131,9 @@ public class Menu {
 		}
 	}
 
-	private List<Stock> fetchStock() {
+	List<Stock> fetchStock() {
 		try {
-			var ingredientsText = getContents();// resource().withPath("ingredients.json").text();
+			var ingredientsText = fetchIngredientsJsonAsText();// resource().withPath("ingredients.json").text();
 			var ingredientsJson = JsonParser.parseString(ingredientsText).getAsJsonObject();
 			var stocksArray = ingredientsJson.get("stock");
 
@@ -143,9 +146,9 @@ public class Menu {
 		return new ArrayList<Stock>();
 	}
 
-	private List<Recipe> fetchRecipes() {
+	List<Recipe> fetchRecipes() {
 		try {
-			var recipesText = getContents();// resource().withPath("ingredients.json").text();
+			var recipesText = fetchIngredientsJsonAsText();// resource().withPath("ingredients.json").text();
 			var recipesJson = JsonParser.parseString(recipesText).getAsJsonObject();
 			var recipesArray = recipesJson.get("recipes");
 
@@ -158,7 +161,7 @@ public class Menu {
 		return new ArrayList<Recipe>();
 	}
 
-	private String getContents() {
+	private String fetchIngredientsJsonAsText() {
 		String data = "";
 		try (InputStream inputStream = getClass().getResourceAsStream("/ingredients.json");
 				BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream))) {

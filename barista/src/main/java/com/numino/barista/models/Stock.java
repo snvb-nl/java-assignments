@@ -1,4 +1,4 @@
-package com.numino.barista;
+package com.numino.barista.models;
 
 public class Stock {
 	private String name;

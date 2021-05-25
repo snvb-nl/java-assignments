@@ -1,4 +1,4 @@
-package com.numino.horsetrack;
+package com.numino.horsetrack.models;
 
 public class Horse {
 	private String horseName;

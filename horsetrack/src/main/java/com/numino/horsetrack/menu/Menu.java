@@ -1,4 +1,4 @@
-package com.numino.horsetrack;
+package com.numino.horsetrack.menu;
 
 import java.io.BufferedReader;
 import java.io.InputStream;
@@ -14,6 +14,9 @@ import org.apache.commons.lang3.math.NumberUtils;
 import com.google.gson.Gson;
 import com.google.gson.JsonParser;
 import com.google.gson.reflect.TypeToken;
+import com.numino.horsetrack.models.Horse;
+import com.numino.horsetrack.models.Inventory;
+import com.numino.horsetrack.utility.Util;
 
 public class Menu {
 	private List<Horse> horses;

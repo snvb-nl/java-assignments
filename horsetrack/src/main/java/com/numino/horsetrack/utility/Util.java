@@ -1,4 +1,4 @@
-package com.numino.barista;
+package com.numino.horsetrack.utility;
 
 public class Util {
 	public static void ln(Object s) {
@@ -13,5 +13,4 @@ public class Util {
 		System.out.print("\033[H\033[2J");
 		System.out.flush();
 	}
-
 }

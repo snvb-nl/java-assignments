@@ -1,4 +1,4 @@
-package com.numino.horsetrack;
+package com.numino.horsetrack.models;
 
 public class Inventory {
 	private int denomination;
