@@ -1,5 +1,10 @@
 package com.numino.barista.utility;
 
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.stream.Collectors;
+
 public class Util {
 	public static void ln(Object s) {
 		System.out.println(s);
@@ -12,6 +17,17 @@ public class Util {
 	public static void clearScreen() {
 		System.out.print("\033[H\033[2J");
 		System.out.flush();
+	}
+
+	public String fetchIngredientsJsonAsText() {
+		String data = "";
+		try (InputStream inputStream = getClass().getResourceAsStream("/ingredients.json");
+				BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream))) {
+			data = reader.lines().collect(Collectors.joining(System.lineSeparator()));
+		} catch (Exception e) {
+
+		}
+		return data;
 	}
 
 }

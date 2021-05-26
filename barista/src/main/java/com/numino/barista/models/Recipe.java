@@ -4,7 +4,7 @@ import java.util.Map;
 
 public class Recipe {
 	private String name;
-	private Map<String, Object> ingredients;
+	private Map<String, Integer> ingredients;
 
 	public String getName() {
 		return name;
@@ -14,11 +14,11 @@ public class Recipe {
 		this.name = name;
 	}
 
-	public Map<String, Object> getIngredients() {
+	public Map<String, Integer> getIngredients() {
 		return ingredients;
 	}
 
-	public void setIngredients(Map<String, Object> ingredients) {
+	public void setIngredients(Map<String, Integer> ingredients) {
 		this.ingredients = ingredients;
 	}
 }

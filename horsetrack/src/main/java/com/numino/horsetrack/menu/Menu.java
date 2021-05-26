@@ -1,12 +1,8 @@
 package com.numino.horsetrack.menu;
 
-import java.io.BufferedReader;
-import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-import java.util.stream.Collectors;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.math.NumberUtils;
@@ -26,12 +22,12 @@ public class Menu {
 
 	public Menu() {
 		winnerHorse = 1;
+		horses = fetchHorses();
+		inventory = fetchInventory();
 	}
 
 	public void loadMenuAndOps() {
 		Util.clearScreen();
-		horses = fetchHorses();
-		inventory = fetchInventory();
 
 		if (this.horses.size() > 0 && this.inventory.size() > 0) {
 			boolean validInput = true;
@@ -39,65 +35,27 @@ public class Menu {
 				prepareMenu();
 				String line = input.nextLine();
 
-				String[] choices = line.split(" ");
-
 				Util.clearScreen();
-				if (choices.length == 1) {
-					if (choices[0].trim().toLowerCase().equals("r")) {
-						if (restock()) {
-							Util.ln("Ingredients restocked.");
-						} else {
-							Util.ln("Issue with restocking!");
-						}
-					} else if (choices[0].trim().toLowerCase().equals("q")) {
-						Util.ln("Exiting application");
-						validInput = false;
-					} else {
-						Util.ln("Invalid command: " + line);
-					}
-				} else if (choices.length == 2) {
-					if (choices[0].trim().toLowerCase().equals("w")) {
-						if (StringUtils.isNumeric(choices[1]) && (NumberUtils.toInt(choices[1]) > 0
-								&& NumberUtils.toInt(choices[1]) <= horses.size())) {
-							winnerHorse = NumberUtils.toInt(choices[1]);
-						} else {
-							Util.ln("Invalid horse number: " + line);
-						}
-					} else if (StringUtils.isNumeric(choices[0])
-							&& (NumberUtils.toInt(choices[0]) > 0 && NumberUtils.toInt(choices[0]) <= horses.size())) {
-						if (StringUtils.isNumeric(choices[1])) {
-							makeBetOnHorseNumber(NumberUtils.toInt(choices[0]), NumberUtils.toInt(choices[1]));
-						} else {
-							Util.ln("Invalid bet: " + line);
-						}
-					} else {
-						Util.ln("Invalid horse number: " + line);
-					}
-				} else {
-					Util.ln("Invalid command: " + line);
-				}
+				validInput = processUserChoice(line);
 			} while (validInput);
 		} else {
 			Util.ln((Object) "No horses or inventory set.");
 		}
 	}
 
-	private boolean restock() {
-		try {
-			if (inventory.size() > 0) {
-				for (Inventory item : inventory) {
-					item.setQuantity(10);
-				}
-				return true;
-			}
-		} catch (Exception e) {
-			return false;
-		}
-
-		return false;
+	List<Horse> getHorses() {
+		return horses;
 	}
 
-	private void prepareMenu() {
+	List<Inventory> getInventory() {
+		return inventory;
+	}
+
+	int getWinnerHorse() {
+		return winnerHorse;
+	}
+
+	void prepareMenu() {
 		Util.ln("Inventory:");
 		inventory.forEach((item) -> {
 			Util.ln("$" + item.getDenomination() + ", " + item.getQuantity());
@@ -118,9 +76,64 @@ public class Menu {
 		Util.ln("Your choice: ");
 	}
 
+	boolean processUserChoice(String line) {
+		String[] choices = line.split(" ");
+		boolean validInput = true;
+		if (choices.length == 1) {
+			if (choices[0].trim().toLowerCase().equals("r")) {
+				if (restock()) {
+					Util.ln("Cash restocked.");
+				} else {
+					Util.ln("Issue with restocking!");
+				}
+			} else if (choices[0].trim().toLowerCase().equals("q")) {
+				Util.ln("Exiting application.");
+				validInput = false;
+			} else {
+				Util.ln("Invalid command: " + line);
+			}
+		} else if (choices.length == 2) {
+			if (choices[0].trim().toLowerCase().equals("w")) {
+				if (StringUtils.isNumeric(choices[1])
+						&& (NumberUtils.toInt(choices[1]) > 0 && NumberUtils.toInt(choices[1]) <= horses.size())) {
+					winnerHorse = NumberUtils.toInt(choices[1]);
+				} else {
+					Util.ln("Invalid horse number: " + line);
+				}
+			} else if (StringUtils.isNumeric(choices[0])
+					&& (NumberUtils.toInt(choices[0]) > 0 && NumberUtils.toInt(choices[0]) <= horses.size())) {
+				if (StringUtils.isNumeric(choices[1])) {
+					makeBetOnHorseNumber(NumberUtils.toInt(choices[0]), NumberUtils.toInt(choices[1]));
+				} else {
+					Util.ln("Invalid bet: " + line);
+				}
+			} else {
+				Util.ln("Invalid horse number: " + line);
+			}
+		} else {
+			Util.ln("Invalid command: " + line);
+		}
+		return validInput;
+	}
+
+	boolean restock() {
+		try {
+			if (inventory.size() > 0) {
+				for (Inventory item : inventory) {
+					item.setQuantity(10);
+				}
+				return true;
+			}
+		} catch (Exception e) {
+			return false;
+		}
+
+		return false;
+	}
+
 	private List<Horse> fetchHorses() {
 		try {
-			var horsesText = fetchStartupValues();
+			var horsesText = Util.fetchStartupValues();
 			var horsesJson = JsonParser.parseString(horsesText).getAsJsonObject();
 			var horsesArray = horsesJson.get("horses");
 
@@ -135,7 +148,7 @@ public class Menu {
 
 	private List<Inventory> fetchInventory() {
 		try {
-			var inventoryText = fetchStartupValues();
+			var inventoryText = Util.fetchStartupValues();
 			var inventoryJson = JsonParser.parseString(inventoryText).getAsJsonObject();
 			var inventoryArray = inventoryJson.get("inventory");
 
@@ -146,17 +159,6 @@ public class Menu {
 			// TODO: handle exception
 		}
 		return new ArrayList<Inventory>();
-	}
-
-	private String fetchStartupValues() {
-		String data = "";
-		try (InputStream inputStream = getClass().getResourceAsStream("/startupSettings.json");
-				BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream))) {
-			data = reader.lines().collect(Collectors.joining(System.lineSeparator()));
-		} catch (Exception e) {
-
-		}
-		return data;
 	}
 
 	private void makeBetOnHorseNumber(int horseNumber, int betAmount) {
