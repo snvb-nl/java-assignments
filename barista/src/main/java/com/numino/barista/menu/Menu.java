@@ -6,6 +6,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import com.google.gson.Gson;
 import com.google.gson.JsonParser;
 import com.google.gson.reflect.TypeToken;
@@ -19,6 +22,7 @@ public class Menu {
 	private List<Stock> stocks;
 	private List<Recipe> recipes;
 	private Scanner input = new Scanner(System.in);
+	private static Logger logger = LogManager.getLogger("alllogger");
 
 	public Menu() {
 		util = new Util();
@@ -47,7 +51,6 @@ public class Menu {
 		} else {
 			Util.ln((Object) "No ingredients or recipes found.");
 		}
-
 	}
 
 	List<Stock> getStocks() {
@@ -91,20 +94,24 @@ public class Menu {
 		if (choice == 'r') {
 			if (restock()) {
 				Util.ln("Ingredients restocked.");
+				logger.debug("Ingredients restocked.");
 			} else {
 				Util.ln("Issue with restocking!");
 			}
 		} else if (choice == 'q') {
 			Util.ln("Exiting application.");
+			logger.debug("Application exited.");
 		} else if (Character.isDigit(choice)) {
 			int drinkItem = choice - '0';
 			if (drinkItem > 0 && drinkItem <= recipes.size()) {
 				processOrder(drinkItem);
 			} else {
 				Util.ln("Invalid selection: " + choice + ". Try again.");
+				logger.debug("Invalid selection: " + choice + ". Try again.");
 			}
 		} else {
 			Util.ln("Invalid selection: " + choice + ". Try again.");
+			logger.debug("Invalid selection: " + choice + ". Try again.");
 		}
 	}
 
@@ -130,8 +137,10 @@ public class Menu {
 				});
 			}
 			Util.ln("Dispensing drink - " + drink.getName());
+			logger.debug("Dispensing drink - " + drink.getName());
 		} else {
 			Util.ln("Out of stock - " + drink.getName() + ".");
+			logger.debug("Out of stock - " + drink.getName() + ".");
 		}
 	}
 
@@ -160,7 +169,7 @@ public class Menu {
 			return gson.fromJson(stocksArray, new TypeToken<ArrayList<Stock>>() {
 			}.getType());
 		} catch (Exception e) {
-			// TODO: handle exception
+			logger.error("Exception occured", e);
 		}
 		return new ArrayList<Stock>();
 	}
@@ -175,7 +184,7 @@ public class Menu {
 			return gson.fromJson(recipesArray, new TypeToken<List<Recipe>>() {
 			}.getType());
 		} catch (Exception e) {
-			// TODO: handle exception
+			logger.error("Exception occured", e);
 		}
 		return new ArrayList<Recipe>();
 	}
