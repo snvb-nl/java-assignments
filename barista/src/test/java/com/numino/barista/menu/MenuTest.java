@@ -18,7 +18,7 @@ import com.numino.barista.utility.Util;
 public class MenuTest {
 
 	private Menu menu;
-	private static final Util mockUtil = mock(Util.class);
+	private Util mockUtil = mock(Util.class);
 	private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 	private final InputStream systemIn = System.in;
 

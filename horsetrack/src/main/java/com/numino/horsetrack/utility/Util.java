@@ -19,9 +19,9 @@ public class Util {
 		System.out.flush();
 	}
 
-	public static String fetchStartupValues() {
+	public String fetchStartupValues() {
 		String data = "";
-		try (InputStream inputStream = Util.class.getResourceAsStream("/startupSettings.json");
+		try (InputStream inputStream = getClass().getResourceAsStream("/startupSettings.json");
 				BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream))) {
 			data = reader.lines().collect(Collectors.joining(System.lineSeparator()));
 		} catch (Exception e) {

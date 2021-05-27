@@ -15,6 +15,8 @@ import com.numino.horsetrack.models.Inventory;
 import com.numino.horsetrack.utility.Util;
 
 public class Menu {
+
+	private Util util;
 	private List<Horse> horses;
 	private List<Inventory> inventory;
 	private int winnerHorse;
@@ -22,6 +24,13 @@ public class Menu {
 
 	public Menu() {
 		winnerHorse = 1;
+		util = new Util();
+		horses = fetchHorses();
+		inventory = fetchInventory();
+	}
+
+	Menu(Util util) {
+		this.util = util;
 		horses = fetchHorses();
 		inventory = fetchInventory();
 	}
@@ -133,7 +142,7 @@ public class Menu {
 
 	private List<Horse> fetchHorses() {
 		try {
-			var horsesText = Util.fetchStartupValues();
+			var horsesText = util.fetchStartupValues();
 			var horsesJson = JsonParser.parseString(horsesText).getAsJsonObject();
 			var horsesArray = horsesJson.get("horses");
 
@@ -148,7 +157,7 @@ public class Menu {
 
 	private List<Inventory> fetchInventory() {
 		try {
-			var inventoryText = Util.fetchStartupValues();
+			var inventoryText = util.fetchStartupValues();
 			var inventoryJson = JsonParser.parseString(inventoryText).getAsJsonObject();
 			var inventoryArray = inventoryJson.get("inventory");
 
@@ -182,6 +191,11 @@ public class Menu {
 					inventory.get(cnt).setQuantity(inventory.get(cnt).getQuantity() - set[cnt]);
 				}
 				Util.ln("Payout: " + horse.getHorseName() + ", $" + payoutAmount);
+				Util.ln("Dispensing:");
+				for (int cnt = 0; cnt < notes.length; cnt++) {
+					if (set[cnt] != 0)
+						Util.ln("$" + notes[cnt] + " - " + set[cnt]);
+				}
 			}
 		} else {
 			Util.ln("No Payout: " + horse.getHorseName());
