@@ -12,6 +12,7 @@ import com.google.gson.JsonParser;
 import com.google.gson.reflect.TypeToken;
 import com.numino.horsetrack.models.Horse;
 import com.numino.horsetrack.models.Inventory;
+import com.numino.horsetrack.utility.Constants;
 import com.numino.horsetrack.utility.Util;
 
 public class Menu {
@@ -41,14 +42,18 @@ public class Menu {
 		if (this.horses.size() > 0 && this.inventory.size() > 0) {
 			boolean validInput = true;
 			do {
-				prepareMenu();
-				String line = input.nextLine();
+				try {
+					prepareMenu();
+					String line = input.nextLine().toLowerCase().trim();
 
-				Util.clearScreen();
-				validInput = processUserChoice(line);
+					Util.clearScreen();
+					validInput = processUserChoice(line);
+				} catch (Exception e) {
+					Util.f(Constants.INVALID_COMMAND, "");
+				}
 			} while (validInput);
 		} else {
-			Util.ln((Object) "No horses or inventory set.");
+			Util.ln(Constants.NO_ITEMS);
 		}
 	}
 
@@ -65,79 +70,81 @@ public class Menu {
 	}
 
 	void prepareMenu() {
-		Util.ln("Inventory:");
-		inventory.forEach((item) -> {
-			Util.ln("$" + item.getDenomination() + ", " + item.getQuantity());
-		});
-		Util.ln("==========================");
-		Util.ln("Horses:");
-		var horseCnt = horses.size();
-		for (int cnt = 0; cnt < horseCnt; cnt++) {
-			var horse = horses.get(cnt);
-			var winLose = (cnt + 1) == winnerHorse ? "won" : "lost";
-			System.out.printf("%d, %s, %d, %s.\n", cnt + 1, horse.getHorseName(), horse.getOdds(), winLose);
-		}
-		Util.ln("==========================");
-		Util.ln("Press R to Restock the cash inventory");
-		Util.ln("Press Q to Quit");
-		Util.ln("Type W [1 to " + horseCnt + "] to set wining horse number");
-		Util.ln("[1 to " + horseCnt + "] <amount> specifies the horse wagered on and the amount of the bet");
-		Util.ln("Your choice: ");
+		listInventory();
+		listHorses();
+		Util.ln(Constants.RESTOCK_OPTION);
+		Util.ln(Constants.QUIT_OPTION);
+		Util.f(Constants.WINNING_OPTION, horses.size());
+		Util.f(Constants.BET_OPTION, horses.size());
+		Util.ln(Constants.USER_CHOICE);
 	}
 
 	boolean processUserChoice(String line) {
 		String[] choices = line.split(" ");
 		boolean validInput = true;
 		if (choices.length == 1) {
-			if (choices[0].trim().toLowerCase().equals("r")) {
-				if (restock()) {
-					Util.ln("Cash restocked.");
-				} else {
-					Util.ln("Issue with restocking!");
-				}
-			} else if (choices[0].trim().toLowerCase().equals("q")) {
-				Util.ln("Exiting application.");
+			if (choices[0].equals("r")) {
+				restock();
+			} else if (choices[0].equals("q")) {
+				Util.ln(Constants.EXIT_APP);
 				validInput = false;
 			} else {
-				Util.ln("Invalid command: " + line);
+				Util.f(Constants.INVALID_COMMAND, line);
 			}
 		} else if (choices.length == 2) {
-			if (choices[0].trim().toLowerCase().equals("w")) {
+			if (choices[0].equals("w")) {
 				if (StringUtils.isNumeric(choices[1])
 						&& (NumberUtils.toInt(choices[1]) > 0 && NumberUtils.toInt(choices[1]) <= horses.size())) {
 					winnerHorse = NumberUtils.toInt(choices[1]);
 				} else {
-					Util.ln("Invalid horse number: " + line);
+					Util.f(Constants.INVALID_HORSE, line);
 				}
 			} else if (StringUtils.isNumeric(choices[0])
 					&& (NumberUtils.toInt(choices[0]) > 0 && NumberUtils.toInt(choices[0]) <= horses.size())) {
 				if (StringUtils.isNumeric(choices[1])) {
 					makeBetOnHorseNumber(NumberUtils.toInt(choices[0]), NumberUtils.toInt(choices[1]));
 				} else {
-					Util.ln("Invalid bet: " + line);
+					Util.f(Constants.INVALID_BET, line);
 				}
 			} else {
-				Util.ln("Invalid horse number: " + line);
+				Util.f(Constants.INVALID_HORSE, line);
 			}
 		} else {
-			Util.ln("Invalid command: " + line);
+			Util.f(Constants.INVALID_COMMAND, line);
 		}
 		return validInput;
 	}
 
-	boolean restock() {
+	void restock() {
 		try {
 			if (inventory.size() > 0) {
 				for (Inventory item : inventory) {
 					item.setQuantity(10);
 				}
-				return true;
+				Util.ln(Constants.RESTOCKED);
 			}
 		} catch (Exception e) {
-			return false;
+			Util.ln(Constants.RESTOCK_ISSUE);
 		}
+	}
 
-		return false;
+	private void listInventory() {
+		Util.ln(Constants.INVENTORY);
+		inventory.forEach((item) -> {
+			Util.f(Constants.INVENTORY_ITEM, item.getDenomination(), item.getQuantity());
+		});
+		Util.ln(Constants.MENU_SPLIT);
+	}
+
+	private void listHorses() {
+		Util.ln(Constants.HORSES);
+		var horseCnt = horses.size();
+		for (int cnt = 0; cnt < horseCnt; cnt++) {
+			var horse = horses.get(cnt);
+			var winLose = (cnt + 1) == winnerHorse ? Constants.WON : Constants.LOST;
+			Util.f(Constants.HORSE_ITEM, cnt + 1, horse.getHorseName(), horse.getOdds(), winLose);
+		}
+		Util.ln(Constants.MENU_SPLIT);
 	}
 
 	private List<Horse> fetchHorses() {
@@ -184,21 +191,21 @@ public class Menu {
 
 			List<Integer[]> results = calculateDispensingSet(notes, noteCount, new int[5], payoutAmount, 0);
 			if (results.size() == 0) {
-				Util.ln("Insufficient funds: $" + payoutAmount);
+				Util.f(Constants.INSUFFICIENT_FUNDS, payoutAmount);
 			} else {
 				Integer[] set = results.get(results.size() - 1);
 				for (int cnt = 0; cnt < set.length; cnt++) {
 					inventory.get(cnt).setQuantity(inventory.get(cnt).getQuantity() - set[cnt]);
 				}
-				Util.ln("Payout: " + horse.getHorseName() + ", $" + payoutAmount);
-				Util.ln("Dispensing:");
+				Util.f(Constants.PAYOUT, horse.getHorseName(), payoutAmount);
+				Util.ln(Constants.DISPENSING);
 				for (int cnt = 0; cnt < notes.length; cnt++) {
 					if (set[cnt] != 0)
-						Util.ln("$" + notes[cnt] + " - " + set[cnt]);
+						Util.f(Constants.DISPENSING_AMOUNT, notes[cnt], set[cnt]);
 				}
 			}
 		} else {
-			Util.ln("No Payout: " + horse.getHorseName());
+			Util.f(Constants.NO_PAYOUT, horse.getHorseName());
 		}
 	}
 

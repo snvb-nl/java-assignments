@@ -2,7 +2,7 @@ package com.numino.barista.models;
 
 import java.util.Map;
 
-public class Recipe {
+public class Drink {
 	private String name;
 	private Map<String, Integer> ingredients;
 

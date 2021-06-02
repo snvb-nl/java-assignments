@@ -13,6 +13,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import com.numino.horsetrack.utility.Constants;
 import com.numino.horsetrack.utility.Util;
 
 public class MenuTest {
@@ -39,14 +40,14 @@ public class MenuTest {
 	@DisplayName("Test user input 'q' to exit the application")
 	public void testProcessUserChoice_ExitWhenInputIsQ() {
 		menu.processUserChoice("q");
-		assertEquals("Exiting application.\n", outContent.toString());
+		assertEquals(Constants.EXIT_APP, outContent.toString().trim());
 	}
 
 	@Test
 	@DisplayName("Test incomplete input to show 'invalid command' message")
 	public void testProcessUserChoice_InvalidInput() {
 		menu.processUserChoice("x");
-		assertEquals("Invalid command: x\n", outContent.toString());
+		assertEquals(String.format(Constants.INVALID_COMMAND, "x"), outContent.toString().trim());
 	}
 
 	@Test
@@ -62,7 +63,7 @@ public class MenuTest {
 		menu.processUserChoice("w 2");
 		menu.processUserChoice("2 12");
 		assertEquals(2, menu.getWinnerHorse());
-		assertEquals("Payout: Fort Utopia, $120\nDispensing:\n$20 - 1\n$100 - 1\n", outContent.toString());
+		assertEquals("Payout: Fort Utopia, $120\nDispensing:\n$20 - 1\n$100 - 1", outContent.toString().trim());
 	}
 
 	@Test
@@ -71,14 +72,14 @@ public class MenuTest {
 		menu.processUserChoice("w 2");
 		menu.processUserChoice("1 10");
 		assertEquals(2, menu.getWinnerHorse());
-		assertEquals("No Payout: That Darn Gray\n", outContent.toString());
+		assertEquals(String.format(Constants.NO_PAYOUT, "That Darn Gray"), outContent.toString().trim());
 	}
 
 	@Test
 	@DisplayName("Test invalid bet amount when bet amount is not integer")
 	public void testProcessUserChoice_InvalidBetWhenBetAmountIsNotinteger() {
 		menu.processUserChoice("1 1.1");
-		assertEquals("Invalid bet: 1 1.1\n", outContent.toString());
+		assertEquals(String.format(Constants.INVALID_BET, "1 1.1"), outContent.toString().trim());
 	}
 
 	private String fetchMockfetchStartupValues() {

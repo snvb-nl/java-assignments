@@ -1,16 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration>
 	<Appenders>
-		<Console name="Console" target="SYSTEM_OUT">
-			<JsonLayout complete="false" compact="true"
-				eventEol="true"></JsonLayout>
-			<PatternLayout>
-				<pattern>
-					[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n
-				</pattern>
-			</PatternLayout>
-		</Console>
-		# File appender
 		<File name="fout" fileName="baeldung-log4j2.log"
 			immediateFlush="true" append="false">
 			# Pattern of log message for file appender
@@ -23,10 +13,8 @@
 	<Loggers>
 		<Root level="info">
 			<AppenderRef ref="fout" />
-			<AppenderRef ref="Console" />
 		</Root>
 		<Logger name="alllogger" level="info">
-			<AppenderRef ref="Console" />
 			<AppenderRef ref="fout" />
 		</Logger>
 	</Loggers>

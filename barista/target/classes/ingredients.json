@@ -46,7 +46,7 @@
          "unitCost":1.00
       }
    ],
-   "recipes":[
+   "drinks":[
       {
          "name":"Coffee",
          "ingredients":{

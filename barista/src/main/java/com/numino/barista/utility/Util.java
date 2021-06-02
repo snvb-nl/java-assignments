@@ -14,6 +14,14 @@ public class Util {
 		System.out.print(s);
 	}
 
+	public static void f(String s, Object ... args ) {
+		System.out.printf(s + "\n", args);
+	}
+
+	public static String Format(String s, Object ... args) {
+		return String.format(s, args);
+	}
+
 	public static void clearScreen() {
 		System.out.print("\033[H\033[2J");
 		System.out.flush();
