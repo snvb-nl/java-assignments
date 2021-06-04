@@ -1,11 +1,11 @@
 package com.numino.barista.utility;
 
 public class Constants {
+	//	Menu Constants
 	public static final String MENU = "Menu";
 	public static final String INGREDIENTS = "Ingredients";
 	public static final String RECIPES = "Recipes";
 	public static final String MENU_SPLIT = "=================================";
-
 	public static final String MENU_ITEM = "%d - %s - $ %.2f - %s.";
 	public static final String RESTOCK_OPTION = "Press R to Restock";
 	public static final String QUIT_OPTION = "Press Q to Quit";
@@ -18,4 +18,14 @@ public class Constants {
 	public static final String INGREDIENTS_RESTOCKED = "Ingredients restocked.";
 	public static final String RESTOCK_ISSUE = "Issue with restocking!";
 	public static final String NO_ITEMS = "No ingredients or recipes found.";
+
+	// Exception Constants
+	public static final String INGREDIENTS_FILE_EXCEPTION = "Exception while fetching ingredients file data";
+	public static final String STOCK_PROCESS_EXCEPTION = "Exception while processing stocks data!";
+	public static final String DRINKS_PROCESS_EXCEPTION = "Exception while processing drinks data!";
+	public static final String STOCK_LISTING_EXCEPTION = "Exception while listing stocks data!";
+	public static final String DRINKS_LISTING_EXCEPTION = "Exception while listing drinks data!";
+	public static final String INPUT_CHOICE_EXCEPTION = "Exception in user input - %s!";
+	public static final String PROCESS_ORDER_EXCEPTION = "Exception while processing order!";
+	public static final String RESTOCK_EXCEPTION = "Exception while restocking!";
 }

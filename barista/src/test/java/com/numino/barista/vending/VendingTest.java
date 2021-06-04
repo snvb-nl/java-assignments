@@ -55,7 +55,7 @@ public class VendingTest {
 	@Test
 	@DisplayName("When user selects 1.Cafe Latte as input")
 	public void testProcessUserChoice_DispenseWhenInputIsDrinkNo() {
-		menu.processUserChoice("1");// Cafe Latte selected
+		menu.processUserChoice("1");// Espresso selected
 
 		var stocks = ingredients.getStocks();
 

@@ -1,97 +1,97 @@
 {
-   "stock":[
-      {
-         "name":"Coffee",
-         "stock":10,
-         "unitCost":0.75
-      },
-      {
-         "name":"Decaf Coffee",
-         "stock":10,
-         "unitCost":0.75
-      },
-      {
-         "name":"Sugar",
-         "stock":10,
-         "unitCost":0.25
-      },
-      {
-         "name":"Cream",
-         "stock":10,
-         "unitCost":0.25
-      },
-      {
-         "name":"Steamed Milk",
-         "stock":10,
-         "unitCost":0.35
-      },
-      {
-         "name":"Foamed Milk",
-         "stock":10,
-         "unitCost":0.35
-      },
-      {
-         "name":"Espresso",
-         "stock":10,
-         "unitCost":1.10
-      },
-      {
-         "name":"Cocoa",
-         "stock":10,
-         "unitCost":0.90
-      },
-      {
-         "name":"Whipped Cream",
-         "stock":10,
-         "unitCost":1.00
-      }
-   ],
-   "drinks":[
-      {
-         "name":"Coffee",
-         "ingredients":{
-            "Coffee":3,
-            "Sugar":1,
-            "Cream":1
-         }
-      },
-      {
-         "name":"Decaf Coffee",
-         "ingredients":{
-            "Decaf Coffee":3,
-            "Sugar":1,
-            "Cream":1
-         }
-      },
-      {
-         "name":"Cafe Latte",
-         "ingredients":{
-            "Espresso":2,
-            "Steamed Milk":1
-         }
-      },
-      {
-         "name":"Caffe Americano",
-         "ingredients":{
-            "Espresso":3
-         }
-      },
-      {
-         "name":"Caffe Mocha",
-         "ingredients":{
-            "Espresso":1,
-            "Cocoa":3,
-            "Steamed Milk":1,
-            "Whipped Cream":1
-         }
-      },
-      {
-         "name":"Cappucino",
-         "ingredients":{
-            "Espresso":2,
-            "Steamed Milk":1,
-            "Foamed Milk":1
-         }
-      }
-   ]
+	"stock": [
+		{
+			"name": "Coffee",
+			"stock": 10,
+			"unitCost": 0.50
+		},
+		{
+			"name": "Decaf Coffee",
+			"stock": 10,
+			"unitCost": 0.75
+		},
+		{
+			"name": "Sugar",
+			"stock": 10,
+			"unitCost": 0.25
+		},
+		{
+			"name": "Cream",
+			"stock": 10,
+			"unitCost": 0.25
+		},
+		{
+			"name": "Steamed Milk",
+			"stock": 10,
+			"unitCost": 0.35
+		},
+		{
+			"name": "Foamed Milk",
+			"stock": 10,
+			"unitCost": 0.35
+		},
+		{
+			"name": "Espresso",
+			"stock": 10,
+			"unitCost": 1.10
+		},
+		{
+			"name": "Cocoa",
+			"stock": 10,
+			"unitCost": 0.90
+		},
+		{
+			"name": "Whipped Cream",
+			"stock": 10,
+			"unitCost": 1.00
+		}
+	],
+	"drinks": [
+		{
+			"name": "Coffee",
+			"ingredients": {
+				"Coffee": 3,
+				"Sugar": 1,
+				"Cream": 1
+			}
+		},
+		{
+			"name": "Decaf Coffee",
+			"ingredients": {
+				"Decaf Coffee": 3,
+				"Sugar": 1,
+				"Cream": 1
+			}
+		},
+		{
+			"name": "Cafe Latte",
+			"ingredients": {
+				"Espresso": 2,
+				"Steamed Milk": 1
+			}
+		},
+		{
+			"name": "Caffe Americano",
+			"ingredients": {
+				"Espresso": 3
+			}
+		},
+		{
+			"name": "Caffe Mocha",
+			"ingredients": {
+				"Espresso": 1,
+				"Cocoa": 3,
+				"Steamed Milk": 1,
+				"Whipped Cream": 1
+			}
+		},
+		{
+			"name": "Cappucino",
+			"ingredients": {
+				"Espresso": 2,
+				"Steamed Milk": 1,
+				"Foamed Milk": 1
+			}
+		}
+	]
 }

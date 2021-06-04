@@ -9,12 +9,13 @@ import org.slf4j.LoggerFactory;
 
 import com.numino.barista.models.Stock;
 import com.numino.barista.utility.Constants;
+import com.numino.barista.utility.ExceptionLogger;
 import com.numino.barista.utility.Util;
 
 public class Vending {
 
+	private static Logger logger = LoggerFactory.getLogger(Vending.class);
 	private Ingredients ingredients = Ingredients.getInstance();
-	private static Logger logger = LoggerFactory.getLogger(Menu.class);
 
 	void restock() {
 		try {
@@ -23,11 +24,9 @@ public class Vending {
 					stock.setStock(10);
 				}
 			}
-			Util.ln(Constants.INGREDIENTS_RESTOCKED);
-			logger.info(Constants.INGREDIENTS_RESTOCKED);
-
+			Util.lnp(logger, Constants.INGREDIENTS_RESTOCKED);
 		} catch (Exception e) {
-			Util.ln(Constants.RESTOCK_ISSUE);
+			ExceptionLogger.LogErrorAndExit(logger, e, Constants.RESTOCK_EXCEPTION);
 		}
 	}
 
@@ -56,22 +55,15 @@ public class Vending {
 							}
 						});
 					}
-					Util.f(Constants.DISPENSE_DRINK, drink.getName());
-					logger.debug(String.format(Constants.DISPENSE_DRINK, drink.getName()));
+					Util.lnp(logger, Constants.DISPENSE_DRINK, drink.getName());
 				} else {
-					Util.f(Constants.OUTOF_STOCK, drink.getName());
-					logger.debug(String.format(Constants.OUTOF_STOCK, drink.getName()));
+					Util.lnp(logger, Constants.OUTOF_STOCK, drink.getName());
 				}
 			} else {
-				showInvalidChoice(choice);
+				Util.sof(Constants.INVALID_CHOICE, choice);
 			}
 		} catch (Exception e) {
-			showInvalidChoice(choice);
+			ExceptionLogger.LogErrorAndExit(logger, e, Constants.PROCESS_ORDER_EXCEPTION, choice);
 		}
-	}
-
-	private void showInvalidChoice(String choice) {
-		Util.f(Constants.INVALID_CHOICE, choice);
-		logger.info(String.format(Constants.INVALID_CHOICE, choice));
 	}
 }

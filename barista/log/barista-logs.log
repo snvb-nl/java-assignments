@@ -1,0 +1,56 @@
+{
+  "timestamp" : "2021-06-04T16:20:20.922Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "com.numino.barista.vending.Vending",
+  "message" : "Dispensing drink - Caffe Americano",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-04T16:20:21.262Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "com.numino.barista.vending.Vending",
+  "message" : "Dispensing drink - Caffe Mocha",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-04T16:20:36.426Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "com.numino.barista.vending.Vending",
+  "message" : "Dispensing drink - Caffe Americano",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-04T16:20:36.714Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "com.numino.barista.vending.Vending",
+  "message" : "Dispensing drink - Caffe Americano",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-04T16:20:37.081Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "com.numino.barista.vending.Vending",
+  "message" : "Out of stock - Caffe Americano.",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-04T16:20:47.523Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "com.numino.barista.vending.Vending",
+  "message" : "Ingredients restocked.",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-04T16:20:49.130Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "com.numino.barista.vending.Menu",
+  "message" : "Exiting application.",
+  "context" : "default"
+}
