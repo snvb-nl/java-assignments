@@ -1,6 +1,6 @@
 package com.numino.horsetrack.models;
 
-public class Inventory {
+public class Cash {
 	private int denomination;
 	private int quantity;
 

@@ -25,4 +25,14 @@ public class Constants {
 	public static final String DISPENSING = "Dispensing:";
 	public static final String DISPENSING_AMOUNT = "$%d - %d";
 	public static final String NO_PAYOUT = "No Payout: %s";
+
+	// Exception Constants
+	public static final String STARTUP_FILE_EXCEPTION = "Exception while fetching startup settings data";
+	public static final String CASH_PROCESS_EXCEPTION = "Exception while processing inventory data!";
+	public static final String HORSE_PROCESS_EXCEPTION = "Exception while processing horses data!";
+	public static final String CASH_LISTING_EXCEPTION = "Exception while listing inventory data!";
+	public static final String HORSE_LISTING_EXCEPTION = "Exception while listing horse data!";
+	public static final String INPUT_CHOICE_EXCEPTION = "Exception in user input - %s!";
+	public static final String PROCESS_BET_EXCEPTION = "Exception while processing bet!";
+	public static final String RESTOCK_EXCEPTION = "Exception while restocking!";
 }

@@ -1,0 +1,104 @@
+{
+  "timestamp" : "2021-06-05T10:56:08.843Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "com.numino.horsetrack.HorsetrackApplication",
+  "message" : "Starting HorsetrackApplication using Java 15.0.2 on snvb-ubu with PID 13162 (/media/user974/New Volume/Office/Projects/POCs/java-assignments/horsetrack/target/classes started by user974 in /media/user974/New Volume/Office/Projects/POCs/java-assignments/horsetrack)",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-05T10:56:08.884Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.numino.horsetrack.HorsetrackApplication",
+  "message" : "Running with Spring Boot v2.5.0, Spring v5.3.7",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-05T10:56:08.886Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "com.numino.horsetrack.HorsetrackApplication",
+  "message" : "No active profile set, falling back to default profiles: default",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-05T10:56:10.157Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "com.numino.horsetrack.HorsetrackApplication",
+  "message" : "Started HorsetrackApplication in 1.856 seconds (JVM running for 2.984)",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-05T10:56:10.162Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.boot.availability.ApplicationAvailabilityBean",
+  "message" : "Application availability state LivenessState changed to CORRECT",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-05T10:56:10.203Z",
+  "level" : "ERROR",
+  "thread" : "main",
+  "logger" : "com.numino.horsetrack.menu.Menu",
+  "message" : "No horses or inventory set.",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-05T10:57:04.984Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "com.numino.horsetrack.HorsetrackApplication",
+  "message" : "Starting HorsetrackApplication using Java 15.0.2 on snvb-ubu with PID 13261 (/media/user974/New Volume/Office/Projects/POCs/java-assignments/horsetrack/target/classes started by user974 in /media/user974/New Volume/Office/Projects/POCs/java-assignments/horsetrack)",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-05T10:57:05.021Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.numino.horsetrack.HorsetrackApplication",
+  "message" : "Running with Spring Boot v2.5.0, Spring v5.3.7",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-05T10:57:05.023Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "com.numino.horsetrack.HorsetrackApplication",
+  "message" : "No active profile set, falling back to default profiles: default",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-05T10:57:06.135Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "com.numino.horsetrack.HorsetrackApplication",
+  "message" : "Started HorsetrackApplication in 1.776 seconds (JVM running for 2.804)",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-05T10:57:06.139Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.boot.availability.ApplicationAvailabilityBean",
+  "message" : "Application availability state LivenessState changed to CORRECT",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-05T10:58:06.347Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "com.numino.horsetrack.menu.Teller",
+  "message" : "Cash restocked",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-05T10:58:16.926Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.boot.availability.ApplicationAvailabilityBean",
+  "message" : "Application availability state ReadinessState changed to ACCEPTING_TRAFFIC",
+  "context" : "default"
+}
