@@ -46,35 +46,12 @@ public class Menu {
 
 	boolean processUserChoice(String line) {
 		String[] choices = line.split(" ");
-		boolean validInput = true;
+		boolean continueToAccept = true;
 		try {
 			if (choices.length == 1) {
-				if (choices[0].equals("r")) {
-					teller.restock();
-				} else if (choices[0].equals("q")) {
-					Util.sopn(Constants.EXIT_APP);
-					validInput = false;
-				} else {
-					Util.sof(Constants.INVALID_COMMAND, line);
-				}
+				continueToAccept = processSingleInput(choices);
 			} else if (choices.length == 2) {
-				if (choices[0].equals("w")) {
-					if (StringUtils.isNumeric(choices[1]) && (NumberUtils.toInt(choices[1]) > 0
-							&& NumberUtils.toInt(choices[1]) <= inventory.getHorses().size())) {
-						inventory.setWinningHorse(NumberUtils.toInt(choices[1]));
-					} else {
-						Util.sof(Constants.INVALID_HORSE, line);
-					}
-				} else if (StringUtils.isNumeric(choices[0]) && (NumberUtils.toInt(choices[0]) > 0
-						&& NumberUtils.toInt(choices[0]) <= inventory.getHorses().size())) {
-					if (StringUtils.isNumeric(choices[1])) {
-						teller.placeBetOnHorseNumber(NumberUtils.toInt(choices[0]), NumberUtils.toInt(choices[1]));
-					} else {
-						Util.sof(Constants.INVALID_BET, line);
-					}
-				} else {
-					Util.sof(Constants.INVALID_HORSE, line);
-				}
+				processDualInput(choices);
 			} else {
 				Util.sof(Constants.INVALID_COMMAND, line);
 			}
@@ -82,7 +59,7 @@ public class Menu {
 			ExceptionLogger.LogErrorAndExit(logger, e, Constants.INPUT_CHOICE_EXCEPTION, line);
 		}
 
-		return validInput;
+		return continueToAccept;
 	}
 
 	private void prepareMenu() {
@@ -122,4 +99,61 @@ public class Menu {
 
 		Util.sopn(Constants.MENU_SPLIT);
 	}
+
+	private boolean processSingleInput(String[] choices) {
+		// Exit App
+		if (choices[0].equals("q")) {
+			Util.sopn(Constants.EXIT_APP);
+			return false;
+		}
+		// Restock choice
+		else if (choices[0].equals("r")) {
+			teller.restock();
+		}
+		// Invalid input
+		else {
+			Util.sof(Constants.INVALID_COMMAND, StringUtils.join(choices, " "));
+		}
+		return true;
+	}
+
+	private void processDualInput(String[] choices) {
+		// Set winning horse
+		if (choices[0].equals("w")) {
+			verifyAndSetWinningHorse(choices);
+		}
+		// Check for valid horse number
+		else if (StringUtils.isNumeric(choices[0]) && (NumberUtils.toInt(choices[0]) > 0
+				&& NumberUtils.toInt(choices[0]) <= inventory.getHorses().size())) {
+			verifyAndPlaceBet(choices);
+		}
+		// Invalid horse number
+		else {
+			Util.sof(Constants.INVALID_HORSE, StringUtils.join(choices, " "));
+		}
+	}
+
+	private void verifyAndSetWinningHorse(String[] choices) {
+		// Check for correct horse number
+		if (StringUtils.isNumeric(choices[1]) && (NumberUtils.toInt(choices[1]) > 0
+				&& NumberUtils.toInt(choices[1]) <= inventory.getHorses().size())) {
+			inventory.setWinningHorse(NumberUtils.toInt(choices[1]));
+		}
+		// Invalid horse number as input
+		else {
+			Util.sof(Constants.INVALID_HORSE, StringUtils.join(choices, " "));
+		}
+	}
+
+	private void verifyAndPlaceBet(String[] choices) {
+		// Check for valid bet value
+		if (StringUtils.isNumeric(choices[1])) {
+			teller.placeBetOnHorseNumber(NumberUtils.toInt(choices[0]), NumberUtils.toInt(choices[1]));
+		}
+		// Invalid bet amount
+		else {
+			Util.sof(Constants.INVALID_BET, StringUtils.join(choices, " "));
+		}
+	}
+
 }

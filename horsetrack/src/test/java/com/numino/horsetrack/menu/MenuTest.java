@@ -25,7 +25,6 @@ public class MenuTest {
 
 	private Menu menu;
 	private Inventory inventory = Inventory.getInstance();
-	// private Util mockUtil = mock(Util.class);
 	private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 	private final InputStream systemIn = System.in;
 
@@ -34,7 +33,6 @@ public class MenuTest {
 		System.setOut(new PrintStream(outContent));
 		final Logger logger = (Logger) LoggerFactory.getLogger(Logger.ROOT_LOGGER_NAME);
 		logger.setLevel(Level.OFF); // turn off the default console logger
-		// when(mockUtil.fetchStartupValues()).thenReturn(fetchMockfetchStartupValues());
 		menu = new Menu();
 		inventory.setHorses(fetchMockHorseData());
 		inventory.setMoney(fetchMockCashData());
@@ -137,17 +135,5 @@ public class MenuTest {
 		money.add(cash100);
 
 		return money;
-	}
-
-	private String fetchMockfetchStartupValues() {
-		return "{\n" + "	\"inventory\": [\n" + "		{\n" + "			\"denomination\": 1,\n"
-				+ "			\"quantity\": 10\n" + "		},\n" + "		{\n" + "			\"denomination\": 5,\n"
-				+ "			\"quantity\": 10\n" + "		},\n" + "		{\n" + "			\"denomination\": 10,\n"
-				+ "			\"quantity\": 10\n" + "		},\n" + "		{\n" + "			\"denomination\": 20,\n"
-				+ "			\"quantity\": 10\n" + "		},\n" + "		{\n" + "			\"denomination\": 100,\n"
-				+ "			\"quantity\": 10\n" + "		}\n" + "	],\n" + "	\"horses\": [\n" + "		{\n"
-				+ "			\"horseName\": \"That Darn Gray\",\n" + "			\"odds\": 5\n" + "		},\n"
-				+ "		{\n" + "			\"horseName\": \"Fort Utopia\",\n" + "			\"odds\": 10\n" + "		}\n"
-				+ "	]\n" + "}";
 	}
 }

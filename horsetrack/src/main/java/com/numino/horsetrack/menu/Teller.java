@@ -1,6 +1,5 @@
 package com.numino.horsetrack.menu;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.slf4j.Logger;
@@ -8,6 +7,7 @@ import org.slf4j.LoggerFactory;
 
 import com.numino.horsetrack.models.Cash;
 import com.numino.horsetrack.models.Horse;
+import com.numino.horsetrack.utility.CashDispenser;
 import com.numino.horsetrack.utility.Constants;
 import com.numino.horsetrack.utility.ExceptionLogger;
 import com.numino.horsetrack.utility.Util;
@@ -43,60 +43,29 @@ public class Teller {
 			int[] notes = inventory.getMoney().stream().mapToInt(item -> item.getDenomination()).toArray();
 			int[] noteCount = inventory.getMoney().stream().mapToInt(item -> item.getQuantity()).toArray();
 
-			List<Integer[]> results = calculateDispensingSet(notes, noteCount, new int[5], payoutAmount, 0);
+			List<Integer[]> results = CashDispenser.calculateDispensingSet(notes, noteCount, new int[5], payoutAmount,
+					0);
 			if (results.size() == 0) {
 				Util.sof(Constants.INSUFFICIENT_FUNDS, payoutAmount);
 			} else {
-				Integer[] set = results.get(results.size() - 1);
-				for (int cnt = 0; cnt < set.length; cnt++) {
-					inventory.getMoney().get(cnt).setQuantity(inventory.getMoney().get(cnt).getQuantity() - set[cnt]);
-				}
-				Util.sof(Constants.PAYOUT, horse.getHorseName(), payoutAmount);
-				Util.sopn(Constants.DISPENSING);
-				for (int cnt = 0; cnt < notes.length; cnt++) {
-					if (set[cnt] != 0)
-						Util.sof(Constants.DISPENSING_AMOUNT, notes[cnt], set[cnt]);
-				}
+				dispensePayout(results.get(results.size() - 1), notes, payoutAmount, horse);
 			}
 		} else {
 			Util.sof(Constants.NO_PAYOUT, horse.getHorseName());
 		}
 	}
 
-	private List<Integer[]> calculateDispensingSet(int[] notes, int[] noteCount, int[] variation, int price,
-			int position) {
-		List<Integer[]> list = new ArrayList<>();
-		int value = compute(notes, variation);
-		if (value < price) {
-			for (int i = position; i < notes.length; i++) {
-				if (noteCount[i] > variation[i]) {
-					int[] newvariation = variation.clone();
-					newvariation[i]++;
-					List<Integer[]> newList = calculateDispensingSet(notes, noteCount, newvariation, price, i);
-					if (newList != null) {
-						list.addAll(newList);
-					}
-				}
-			}
-		} else if (value == price) {
-			list.add(myCopy(variation));
+	private void dispensePayout(Integer[] fundsInDenomination, int[] notes, int payoutAmount, Horse horse) {
+		for (int cnt = 0; cnt < fundsInDenomination.length; cnt++) {
+			inventory.getMoney().get(cnt)
+					.setQuantity(inventory.getMoney().get(cnt).getQuantity() - fundsInDenomination[cnt]);
 		}
-		return list;
+		Util.sof(Constants.PAYOUT, horse.getHorseName(), payoutAmount);
+		Util.sopn(Constants.DISPENSING);
+		for (int cnt = 0; cnt < notes.length; cnt++) {
+			if (fundsInDenomination[cnt] != 0)
+				Util.sof(Constants.DISPENSING_AMOUNT, notes[cnt], fundsInDenomination[cnt]);
+		}
 	}
 
-	private int compute(int[] values, int[] variation) {
-		int ret = 0;
-		for (int i = 0; i < variation.length; i++) {
-			ret += values[i] * variation[i];
-		}
-		return ret;
-	}
-
-	private Integer[] myCopy(int[] ar) {
-		Integer[] ret = new Integer[ar.length];
-		for (int i = 0; i < ar.length; i++) {
-			ret[i] = ar[i];
-		}
-		return ret;
-	}
 }

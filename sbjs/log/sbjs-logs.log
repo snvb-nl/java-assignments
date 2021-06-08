@@ -1,0 +1,3686 @@
+{
+  "timestamp" : "2021-06-06T19:00:00.750Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "com.numino.sbjs.SbjsApplication",
+  "message" : "Starting SbjsApplication using Java 15.0.2 on snvb-ubu with PID 19273 (/media/user974/New Volume/Office/Projects/POCs/java-assignments/sbjs/target/classes started by user974 in /media/user974/New Volume/Office/Projects/POCs/java-assignments/sbjs)",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:00.777Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.numino.sbjs.SbjsApplication",
+  "message" : "Running with Spring Boot v2.5.0, Spring v5.3.7",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:00.778Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "com.numino.sbjs.SbjsApplication",
+  "message" : "No active profile set, falling back to default profiles: default",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:01.618Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.data.repository.config.RepositoryConfigurationDelegate",
+  "message" : "Bootstrapping Spring Data JPA repositories in DEFAULT mode.",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:01.735Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.data.repository.config.RepositoryConfigurationDelegate",
+  "message" : "Finished Spring Data repository scanning in 99 ms. Found 1 JPA repository interfaces.",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.077Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker",
+  "message" : "Bean 'executorProperties' of type [com.numino.sbjs.config.ExecutorProperties$$EnhancerBySpringCGLIB$$47e6b874] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.078Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker",
+  "message" : "Bean 'jobExecutor' of type [com.numino.sbjs.executor.JobExecutor$$EnhancerBySpringCGLIB$$75614569] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.259Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "Driver class org.hibernate.dialect.MySQL5InnoDBDialect found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@799f7e29",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.305Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.jboss.logging",
+  "message" : "Logging Provider: org.jboss.logging.Slf4jLoggerProvider",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.317Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.hibernate.dialect.Dialect",
+  "message" : "HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.398Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.hibernate.Version",
+  "message" : "HHH000412: Hibernate ORM core version 5.4.31.Final",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.404Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.Environment",
+  "message" : "HHH000206: hibernate.properties not found",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.722Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.jpa.internal.util.LogHelper",
+  "message" : "PersistenceUnitInfo [\n\tname: default\n\tpersistence provider classname: null\n\tclassloader: jdk.internal.loader.ClassLoaders$AppClassLoader@799f7e29\n\texcludeUnlistedClasses: true\n\tJTA datasource: null\n\tNon JTA datasource: HikariDataSource (null)\n\tTransaction type: RESOURCE_LOCAL\n\tPU root URL: file:/media/user974/New%20Volume/Office/Projects/POCs/java-assignments/sbjs/target/classes/\n\tShared Cache Mode: UNSPECIFIED\n\tValidation Mode: AUTO\n\tJar files URLs []\n\tManaged classes names [\n\t\tcom.numino.sbjs.dbmodel.AsyncEvents]\n\tMapping files names []\n\tProperties []",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.735Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.integrator.internal.IntegratorServiceImpl",
+  "message" : "Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.739Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.integrator.internal.IntegratorServiceImpl",
+  "message" : "Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.744Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.integrator.internal.IntegratorServiceImpl",
+  "message" : "Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.821Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.service.spi.ServiceBinding",
+  "message" : "Overriding existing service binding [org.hibernate.secure.spi.JaccService]",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.841Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cache.internal.RegionFactoryInitiator",
+  "message" : "Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.844Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cache.internal.RegionFactoryInitiator",
+  "message" : "Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.878Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.hibernate.annotations.common.Version",
+  "message" : "HCANN000001: Hibernate Commons Annotations {5.1.2.Final}",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.919Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration boolean -> org.hibernate.type.BooleanType@2ceee4b6",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.920Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration boolean -> org.hibernate.type.BooleanType@2ceee4b6",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.921Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@2ceee4b6",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.923Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@12a470dd",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.924Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration true_false -> org.hibernate.type.TrueFalseType@e784320",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.925Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration yes_no -> org.hibernate.type.YesNoType@3f6bf8aa",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.926Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration byte -> org.hibernate.type.ByteType@13c8ac77",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.927Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration byte -> org.hibernate.type.ByteType@13c8ac77",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.928Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@13c8ac77",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.929Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration character -> org.hibernate.type.CharacterType@4bdf",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.930Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration char -> org.hibernate.type.CharacterType@4bdf",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.932Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@4bdf",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.933Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration short -> org.hibernate.type.ShortType@4cad79bc",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.934Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration short -> org.hibernate.type.ShortType@4cad79bc",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.935Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration java.lang.Short -> org.hibernate.type.ShortType@4cad79bc",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.936Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration integer -> org.hibernate.type.IntegerType@2c63762b",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.937Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration int -> org.hibernate.type.IntegerType@2c63762b",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.938Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@2c63762b",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.940Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration long -> org.hibernate.type.LongType@7a9eccc4",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.941Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration long -> org.hibernate.type.LongType@7a9eccc4",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.942Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration java.lang.Long -> org.hibernate.type.LongType@7a9eccc4",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.944Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration float -> org.hibernate.type.FloatType@78422efb",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.945Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration float -> org.hibernate.type.FloatType@78422efb",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.946Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration java.lang.Float -> org.hibernate.type.FloatType@78422efb",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.947Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration double -> org.hibernate.type.DoubleType@5f05c8d6",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.950Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration double -> org.hibernate.type.DoubleType@5f05c8d6",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.951Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@5f05c8d6",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.952Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@68e02f33",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.953Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@68e02f33",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.954Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration big_integer -> org.hibernate.type.BigIntegerType@64942607",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.955Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@64942607",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.956Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration string -> org.hibernate.type.StringType@d48e998",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.957Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration java.lang.String -> org.hibernate.type.StringType@d48e998",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.958Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration nstring -> org.hibernate.type.StringNVarcharType@7cfac39f",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.960Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@3069a360",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.961Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration url -> org.hibernate.type.UrlType@7235f92b",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.961Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration java.net.URL -> org.hibernate.type.UrlType@7235f92b",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.963Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration Duration -> org.hibernate.type.DurationType@39f5b723",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.964Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration java.time.Duration -> org.hibernate.type.DurationType@39f5b723",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.966Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration Instant -> org.hibernate.type.InstantType@27a09971",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.967Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration java.time.Instant -> org.hibernate.type.InstantType@27a09971",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.969Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@6af90849",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.970Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@6af90849",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.973Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration LocalDate -> org.hibernate.type.LocalDateType@999b951",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.974Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@999b951",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.976Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@16736040",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.977Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@16736040",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.980Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@fa5f81c",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.981Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@fa5f81c",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.982Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@1faf386c",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:02.983Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@1faf386c",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.000Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@233db8e9",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.001Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@233db8e9",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.001Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration date -> org.hibernate.type.DateType@40c2ce52",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.002Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration java.sql.Date -> org.hibernate.type.DateType@40c2ce52",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.003Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration time -> org.hibernate.type.TimeType@18a19e",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.003Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration java.sql.Time -> org.hibernate.type.TimeType@18a19e",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.004Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration timestamp -> org.hibernate.type.TimestampType@60a7e509",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.005Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@60a7e509",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.007Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration java.util.Date -> org.hibernate.type.TimestampType@60a7e509",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.017Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@787508ca",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.018Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration calendar -> org.hibernate.type.CalendarType@3d24420b",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.018Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@3d24420b",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.019Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@3d24420b",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.020Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@6274670b",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.022Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@3965bdf9",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.023Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration locale -> org.hibernate.type.LocaleType@3c0e00a8",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.023Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@3c0e00a8",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.025Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration currency -> org.hibernate.type.CurrencyType@1860f3be",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.026Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@1860f3be",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.027Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration timezone -> org.hibernate.type.TimeZoneType@6cd15072",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.028Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@6cd15072",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.029Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration class -> org.hibernate.type.ClassType@78cfa264",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.030Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration java.lang.Class -> org.hibernate.type.ClassType@78cfa264",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.031Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@3408f695",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.032Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@3408f695",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.033Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@2b6a0ea9",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.033Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration binary -> org.hibernate.type.BinaryType@4dde8976",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.034Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration byte[] -> org.hibernate.type.BinaryType@4dde8976",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.035Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration [B -> org.hibernate.type.BinaryType@4dde8976",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.035Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@4887de2b",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.036Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@4887de2b",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.036Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@4887de2b",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.037Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration row_version -> org.hibernate.type.RowVersionType@3b4825f0",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.037Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration image -> org.hibernate.type.ImageType@40ac6b76",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.038Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration characters -> org.hibernate.type.CharArrayType@7980cf2c",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.038Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration char[] -> org.hibernate.type.CharArrayType@7980cf2c",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.039Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration [C -> org.hibernate.type.CharArrayType@7980cf2c",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.040Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@f0020b1",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.040Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@f0020b1",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.041Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@f0020b1",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.042Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration text -> org.hibernate.type.TextType@759de304",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.042Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration ntext -> org.hibernate.type.NTextType@5649d11a",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.043Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration blob -> org.hibernate.type.BlobType@294f9d50",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.044Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@294f9d50",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.044Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@27443560",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.045Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration clob -> org.hibernate.type.ClobType@3ddb774f",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.045Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@3ddb774f",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.046Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration nclob -> org.hibernate.type.NClobType@2582b0ef",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.046Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@2582b0ef",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.047Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@70721c12",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.048Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@769bd849",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.048Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration serializable -> org.hibernate.type.SerializableType@101ca8da",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.054Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration object -> org.hibernate.type.ObjectType@7bcecef6",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.054Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@7bcecef6",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.055Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@77c1e611",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.057Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@12c0c0b3",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.058Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@5a97b17c",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.059Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@9c73fff",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.059Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@71cea1b8",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.060Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@659f226a",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.061Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@2e463f4",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.062Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.BasicTypeRegistry",
+  "message" : "Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@32ec9c90",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.080Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.boot.internal.BootstrapContextImpl",
+  "message" : "Injecting JPA temp ClassLoader [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@3a17b2e3] into BootstrapContext; was [null]",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.081Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.boot.internal.ClassLoaderAccessImpl",
+  "message" : "ClassLoaderAccessImpl#injectTempClassLoader(org.springframework.instrument.classloading.SimpleThrowawayClassLoader@3a17b2e3) [was null]",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.083Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.boot.internal.BootstrapContextImpl",
+  "message" : "Injecting ScanEnvironment [org.hibernate.jpa.boot.internal.StandardJpaScanEnvironmentImpl@22d322f5] into BootstrapContext; was [null]",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.084Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.boot.internal.BootstrapContextImpl",
+  "message" : "Injecting ScanOptions [org.hibernate.boot.archive.scan.internal.StandardScanOptions@65afeb6d] into BootstrapContext; was [org.hibernate.boot.archive.scan.internal.StandardScanOptions@6723610b]",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.111Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.boot.internal.BootstrapContextImpl",
+  "message" : "Injecting JPA temp ClassLoader [null] into BootstrapContext; was [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@3a17b2e3]",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.112Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.boot.internal.ClassLoaderAccessImpl",
+  "message" : "ClassLoaderAccessImpl#injectTempClassLoader(null) [was org.springframework.instrument.classloading.SimpleThrowawayClassLoader@3a17b2e3]",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.127Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory",
+  "message" : "Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.128Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory",
+  "message" : "Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.129Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory",
+  "message" : "Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.130Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory",
+  "message" : "Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.130Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory",
+  "message" : "Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.132Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory",
+  "message" : "Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.133Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory",
+  "message" : "Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.136Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory",
+  "message" : "Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.138Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory",
+  "message" : "Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.139Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory",
+  "message" : "Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.140Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory",
+  "message" : "Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.142Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory",
+  "message" : "Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.142Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory",
+  "message" : "Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.144Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory",
+  "message" : "Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.152Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "HikariPool-1 - configuration:",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.155Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "allowPoolSuspension................................false",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.155Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "autoCommit................................true",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.156Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "catalog................................none",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.156Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "connectionInitSql................................none",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.156Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "connectionTestQuery................................none",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.157Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "connectionTimeout................................30000",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.157Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "dataSource................................none",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.158Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "dataSourceClassName................................none",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.158Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "dataSourceJNDI................................none",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.159Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "dataSourceProperties................................{password=<masked>}",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.160Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "driverClassName................................\"org.hibernate.dialect.MySQL5InnoDBDialect\"",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.161Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "exceptionOverrideClassName................................none",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.161Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "healthCheckProperties................................{}",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.161Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "healthCheckRegistry................................none",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.161Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "idleTimeout................................600000",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.162Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "initializationFailTimeout................................1",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.162Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "isolateInternalQueries................................false",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.162Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "jdbcUrl................................jdbc:mysql://trainingdbinstance.cysfinn4a8xf.us-west-2.rds.amazonaws.com:3306/amreplica",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.163Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "keepaliveTime................................0",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.163Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "leakDetectionThreshold................................0",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.163Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "maxLifetime................................1800000",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.164Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "maximumPoolSize................................10",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.164Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "metricRegistry................................none",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.164Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "metricsTrackerFactory................................none",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.164Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "minimumIdle................................10",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.165Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "password................................<masked>",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.165Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "poolName................................\"HikariPool-1\"",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.165Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "readOnly................................false",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.166Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "registerMbeans................................false",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.166Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "scheduledExecutor................................none",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.166Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "schema................................none",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.166Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "threadFactory................................internal",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.167Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "transactionIsolation................................default",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.167Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "username................................\"admin\"",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.167Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "validationTimeout................................5000",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.168Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariDataSource",
+  "message" : "HikariPool-1 - Starting...",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.188Z",
+  "level" : "WARN",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.util.DriverDataSource",
+  "message" : "Registered driver with driverClassName=org.hibernate.dialect.MySQL5InnoDBDialect was not found, trying direct instantiation.",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.189Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.util.DriverDataSource",
+  "message" : "Driver class org.hibernate.dialect.MySQL5InnoDBDialect found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@799f7e29",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.190Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.hibernate.dialect.Dialect",
+  "message" : "HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.195Z",
+  "level" : "WARN",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.util.DriverDataSource",
+  "message" : "Failed to create instance of driver class org.hibernate.dialect.MySQL5InnoDBDialect, trying jdbcUrl resolution",
+  "context" : "default",
+  "exception" : "java.lang.ClassCastException: class org.hibernate.dialect.MySQL5InnoDBDialect cannot be cast to class java.sql.Driver (org.hibernate.dialect.MySQL5InnoDBDialect is in unnamed module of loader 'app'; java.sql.Driver is in module java.sql of loader 'platform')\n\tat com.zaxxer.hikari.util.DriverDataSource.<init>(DriverDataSource.java:95)\n\tat com.zaxxer.hikari.pool.PoolBase.initializeDataSource(PoolBase.java:331)\n\tat com.zaxxer.hikari.pool.PoolBase.<init>(PoolBase.java:114)\n\tat com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:108)\n\tat com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)\n\tat org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)\n\tat org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)\n\tat org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)\n\tat org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)\n\tat org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)\n\tat org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)\n\tat org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)\n\tat org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)\n\tat org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)\n\tat org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)\n\tat org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)\n\tat org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)\n\tat org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176)\n\tat org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)\n\tat org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)\n\tat org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)\n\tat org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)\n\tat org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)\n\tat org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)\n\tat org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)\n\tat org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)\n\tat org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)\n\tat org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)\n\tat org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)\n\tat org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)\n\tat org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)\n\tat org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)\n\tat org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)\n\tat org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)\n\tat org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)\n\tat org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)\n\tat org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)\n\tat org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)\n\tat org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:438)\n\tat org.springframework.boot.SpringApplication.run(SpringApplication.java:337)\n\tat org.springframework.boot.SpringApplication.run(SpringApplication.java:1336)\n\tat org.springframework.boot.SpringApplication.run(SpringApplication.java:1325)\n\tat com.numino.sbjs.SbjsApplication.main(SbjsApplication.java:32)\n"
+}
+{
+  "timestamp" : "2021-06-06T19:00:03.216Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.util.DriverDataSource",
+  "message" : "Loaded driver with class name com.mysql.cj.jdbc.Driver for jdbcUrl=jdbc:mysql://trainingdbinstance.cysfinn4a8xf.us-west-2.rds.amazonaws.com:3306/amreplica",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.566Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.pool.HikariPool",
+  "message" : "HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@44bc2449",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.569Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariDataSource",
+  "message" : "HikariPool-1 - Start completed.",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.576Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator",
+  "message" : "Database ->\n       name : MySQL\n    version : 5.7.22-log\n      major : 5\n      minor : 7",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.577Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator",
+  "message" : "Driver ->\n       name : MySQL Connector/J\n    version : mysql-connector-java-8.0.25 (Revision: 08be9e9b4cba6aa115f9b27b215887af40b159e0)\n      major : 8\n      minor : 0",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.577Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator",
+  "message" : "JDBC version : 4.2",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.603Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.hibernate.dialect.Dialect",
+  "message" : "HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.619Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.engine.jdbc.env.spi.IdentifierHelperBuilder",
+  "message" : "JDBC driver metadata reported database stores quoted identifiers in more than one case",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.626Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.engine.jdbc.env.spi.IdentifierHelperBuilder",
+  "message" : "IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.669Z",
+  "level" : "DEBUG",
+  "thread" : "HikariPool-1 housekeeper",
+  "logger" : "com.zaxxer.hikari.pool.HikariPool",
+  "message" : "HikariPool-1 - Pool stats (total=1, active=1, idle=0, waiting=0)",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.701Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.boot.model.relational.Namespace",
+  "message" : "Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.707Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.spi.TypeConfiguration$Scope",
+  "message" : "Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@34edd065] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@681e913c]",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.773Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.AnnotationBinder",
+  "message" : "Binding entity from annotated class: com.numino.sbjs.dbmodel.AsyncEvents",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.802Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.Ejb3Column",
+  "message" : "Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.808Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.annotations.EntityBinder",
+  "message" : "Import with entity name AsyncEvents",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.814Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.annotations.EntityBinder",
+  "message" : "Bind entity com.numino.sbjs.dbmodel.AsyncEvents on table asynch_events",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.839Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.Ejb3Column",
+  "message" : "Binding column: Ejb3Column{table=org.hibernate.mapping.Table(asynch_events), mappingColumn=row_id, insertable=true, updatable=true, unique=false}",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.843Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.boot.internal.ClassLoaderAccessImpl",
+  "message" : "Not known whether passed class name [com.numino.sbjs.dbmodel.AsyncEvents] is safe",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.843Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.boot.internal.ClassLoaderAccessImpl",
+  "message" : "No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.numino.sbjs.dbmodel.AsyncEvents",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.844Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.annotations.PropertyBinder",
+  "message" : "MetadataSourceProcessor property row_id with lazy=false",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.848Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.AbstractPropertyHolder",
+  "message" : "Attempting to locate auto-apply AttributeConverter for property [com.numino.sbjs.dbmodel.AsyncEvents:row_id]",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.852Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.annotations.SimpleValueBinder",
+  "message" : "building SimpleValue for row_id",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.856Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.annotations.PropertyBinder",
+  "message" : "Building property row_id",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.859Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.BinderHelper",
+  "message" : "#makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(row_id)]), row_id, assigned, , ...)",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.862Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.Ejb3Column",
+  "message" : "Binding column: Ejb3Column{table=org.hibernate.mapping.Table(asynch_events), mappingColumn=event_subtype, insertable=true, updatable=true, unique=false}",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.862Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.annotations.PropertyBinder",
+  "message" : "MetadataSourceProcessor property event_subtype with lazy=false",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.863Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.AbstractPropertyHolder",
+  "message" : "Attempting to locate auto-apply AttributeConverter for property [com.numino.sbjs.dbmodel.AsyncEvents:event_subtype]",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.863Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.annotations.SimpleValueBinder",
+  "message" : "building SimpleValue for event_subtype",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.864Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.annotations.PropertyBinder",
+  "message" : "Building property event_subtype",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.865Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.Ejb3Column",
+  "message" : "Binding column: Ejb3Column{table=org.hibernate.mapping.Table(asynch_events), mappingColumn=event_type, insertable=true, updatable=true, unique=false}",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.866Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.annotations.PropertyBinder",
+  "message" : "MetadataSourceProcessor property event_type with lazy=false",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.866Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.AbstractPropertyHolder",
+  "message" : "Attempting to locate auto-apply AttributeConverter for property [com.numino.sbjs.dbmodel.AsyncEvents:event_type]",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.867Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.annotations.SimpleValueBinder",
+  "message" : "building SimpleValue for event_type",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.867Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.annotations.PropertyBinder",
+  "message" : "Building property event_type",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.867Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.Ejb3Column",
+  "message" : "Binding column: Ejb3Column{table=org.hibernate.mapping.Table(asynch_events), mappingColumn=status, insertable=true, updatable=true, unique=false}",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.868Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.annotations.PropertyBinder",
+  "message" : "MetadataSourceProcessor property status with lazy=false",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.868Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.AbstractPropertyHolder",
+  "message" : "Attempting to locate auto-apply AttributeConverter for property [com.numino.sbjs.dbmodel.AsyncEvents:status]",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.868Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.annotations.SimpleValueBinder",
+  "message" : "building SimpleValue for status",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.869Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.annotations.PropertyBinder",
+  "message" : "Building property status",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.872Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.annotations.SimpleValueBinder",
+  "message" : "Starting fillSimpleValue for row_id",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.873Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.annotations.SimpleValueBinder",
+  "message" : "Starting fillSimpleValue for event_subtype",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.873Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.annotations.SimpleValueBinder",
+  "message" : "Starting fillSimpleValue for event_type",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.873Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.annotations.SimpleValueBinder",
+  "message" : "Starting fillSimpleValue for status",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.875Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.mapping.PrimaryKey",
+  "message" : "Forcing column [row_id] to be non-null as it is part of the primary key for table [asynch_events]",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.934Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.internal.SessionFactoryImpl",
+  "message" : "Building session factory",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.936Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.Settings",
+  "message" : "SessionFactory name : null",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.937Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.Settings",
+  "message" : "Automatic flush during beforeCompletion(): enabled",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.938Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.Settings",
+  "message" : "Automatic session close at end of transaction: disabled",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.938Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.Settings",
+  "message" : "Statistics: disabled",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.939Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.Settings",
+  "message" : "Deleted entity synthetic identifier rollback: disabled",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.939Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.Settings",
+  "message" : "Default entity-mode: pojo",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.940Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.Settings",
+  "message" : "Check Nullability in Core (should be disabled when Bean Validation is on): enabled",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.940Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.Settings",
+  "message" : "Allow initialization of lazy state outside session : disabled",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.941Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.Settings",
+  "message" : "Using BatchFetchStyle : LEGACY",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.942Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.Settings",
+  "message" : "Default batch fetch size: -1",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.943Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.Settings",
+  "message" : "Maximum outer join fetch depth: 2",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.943Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.Settings",
+  "message" : "Default null ordering: NONE",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.944Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.Settings",
+  "message" : "Order SQL updates by primary key: disabled",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.945Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.Settings",
+  "message" : "Order SQL inserts for batching: disabled",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.945Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.Settings",
+  "message" : "multi-tenancy strategy : NONE",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.947Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.Settings",
+  "message" : "JTA Track by Thread: enabled",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.949Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.Settings",
+  "message" : "Query language substitutions: {}",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.950Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.Settings",
+  "message" : "Named query checking : enabled",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.951Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.Settings",
+  "message" : "Second-level cache: disabled",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.952Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.Settings",
+  "message" : "Second-level query cache: disabled",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.953Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.Settings",
+  "message" : "Second-level query cache factory: null",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.953Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.Settings",
+  "message" : "Second-level cache region prefix: null",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.954Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.Settings",
+  "message" : "Optimize second-level cache for minimal puts: disabled",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.954Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.Settings",
+  "message" : "Structured second-level cache entries: disabled",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.955Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.Settings",
+  "message" : "Second-level cache direct-reference entries: disabled",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.955Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.Settings",
+  "message" : "Automatic eviction of collection cache: disabled",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.956Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.Settings",
+  "message" : "JDBC batch size: 15",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.956Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.Settings",
+  "message" : "JDBC batch updates for versioned data: enabled",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.956Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.Settings",
+  "message" : "Scrollable result sets: enabled",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.957Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.Settings",
+  "message" : "Wrap result sets: disabled",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.957Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.Settings",
+  "message" : "JDBC3 getGeneratedKeys(): enabled",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.957Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.Settings",
+  "message" : "JDBC result set fetch size: null",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.957Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.Settings",
+  "message" : "Connection release mode: ON_CLOSE",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.958Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.Settings",
+  "message" : "Generate SQL with comments: disabled",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.958Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.Settings",
+  "message" : "JPA compliance - query : disabled",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.959Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.Settings",
+  "message" : "JPA compliance - closed-handling : disabled",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.959Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.Settings",
+  "message" : "JPA compliance - lists : disabled",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:07.960Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.cfg.Settings",
+  "message" : "JPA compliance - transactions : disabled",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:08.065Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.internal.SessionFactoryImpl",
+  "message" : "Session factory constructed with filter configurations : {}",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:08.066Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.internal.SessionFactoryImpl",
+  "message" : "Instantiating session factory with properties: {hibernate.id.new_generator_mappings=true, java.specification.version=15, hibernate.resource.beans.container=org.springframework.orm.hibernate5.SpringBeanContainer@d70e9a, hibernate.connection.handling_mode=DELAYED_ACQUISITION_AND_HOLD, sun.jnu.encoding=UTF-8, hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy, java.class.path=/media/user974/New Volume/Office/Projects/POCs/java-assignments/sbjs/target/classes:/home/user974/.m2/repository/org/springframework/boot/spring-boot-starter/2.5.0/spring-boot-starter-2.5.0.jar:/home/user974/.m2/repository/org/springframework/boot/spring-boot/2.5.0/spring-boot-2.5.0.jar:/home/user974/.m2/repository/org/springframework/spring-context/5.3.7/spring-context-5.3.7.jar:/home/user974/.m2/repository/org/springframework/spring-expression/5.3.7/spring-expression-5.3.7.jar:/home/user974/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.5.0/spring-boot-autoconfigure-2.5.0.jar:/home/user974/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/home/user974/.m2/repository/org/springframework/spring-core/5.3.7/spring-core-5.3.7.jar:/home/user974/.m2/repository/org/springframework/spring-jcl/5.3.7/spring-jcl-5.3.7.jar:/home/user974/.m2/repository/org/yaml/snakeyaml/1.28/snakeyaml-1.28.jar:/home/user974/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/2.5.0/spring-boot-starter-data-jpa-2.5.0.jar:/home/user974/.m2/repository/org/springframework/boot/spring-boot-starter-aop/2.5.0/spring-boot-starter-aop-2.5.0.jar:/home/user974/.m2/repository/org/springframework/spring-aop/5.3.7/spring-aop-5.3.7.jar:/home/user974/.m2/repository/org/aspectj/aspectjweaver/1.9.6/aspectjweaver-1.9.6.jar:/home/user974/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/2.5.0/spring-boot-starter-jdbc-2.5.0.jar:/home/user974/.m2/repository/com/zaxxer/HikariCP/4.0.3/HikariCP-4.0.3.jar:/home/user974/.m2/repository/org/springframework/spring-jdbc/5.3.7/spring-jdbc-5.3.7.jar:/home/user974/.m2/repository/jakarta/transaction/jakarta.transaction-api/1.3.3/jakarta.transaction-api-1.3.3.jar:/home/user974/.m2/repository/jakarta/persistence/jakarta.persistence-api/2.2.3/jakarta.persistence-api-2.2.3.jar:/home/user974/.m2/repository/org/springframework/data/spring-data-jpa/2.5.1/spring-data-jpa-2.5.1.jar:/home/user974/.m2/repository/org/springframework/data/spring-data-commons/2.5.1/spring-data-commons-2.5.1.jar:/home/user974/.m2/repository/org/springframework/spring-orm/5.3.7/spring-orm-5.3.7.jar:/home/user974/.m2/repository/org/springframework/spring-tx/5.3.7/spring-tx-5.3.7.jar:/home/user974/.m2/repository/org/springframework/spring-beans/5.3.7/spring-beans-5.3.7.jar:/home/user974/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/home/user974/.m2/repository/org/springframework/spring-aspects/5.3.7/spring-aspects-5.3.7.jar:/home/user974/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/home/user974/.m2/repository/ch/qos/logback/contrib/logback-json-classic/0.1.5/logback-json-classic-0.1.5.jar:/home/user974/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/home/user974/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/home/user974/.m2/repository/ch/qos/logback/contrib/logback-json-core/0.1.5/logback-json-core-0.1.5.jar:/home/user974/.m2/repository/ch/qos/logback/contrib/logback-jackson/0.1.5/logback-jackson-0.1.5.jar:/home/user974/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.12.3/jackson-databind-2.12.3.jar:/home/user974/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.12.3/jackson-annotations-2.12.3.jar:/home/user974/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.12.3/jackson-core-2.12.3.jar:/home/user974/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/home/user974/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/home/user974/.m2/repository/mysql/mysql-connector-java/8.0.25/mysql-connector-java-8.0.25.jar:/home/user974/.m2/repository/org/hibernate/hibernate-core/5.4.31.Final/hibernate-core-5.4.31.Final.jar:/home/user974/.m2/repository/org/jboss/logging/jboss-logging/3.4.1.Final/jboss-logging-3.4.1.Final.jar:/home/user974/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar:/home/user974/.m2/repository/org/javassist/javassist/3.27.0-GA/javassist-3.27.0-GA.jar:/home/user974/.m2/repository/net/bytebuddy/byte-buddy/1.10.22/byte-buddy-1.10.22.jar:/home/user974/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/home/user974/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.jar:/home/user974/.m2/repository/org/jboss/jandex/2.2.3.Final/jandex-2.2.3.Final.jar:/home/user974/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/home/user974/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/home/user974/.m2/repository/org/dom4j/dom4j/2.1.3/dom4j-2.1.3.jar:/home/user974/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.2.Final/hibernate-commons-annotations-5.1.2.Final.jar:/home/user974/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/home/user974/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.4/jaxb-runtime-2.3.4.jar:/home/user974/.m2/repository/org/glassfish/jaxb/txw2/2.3.4/txw2-2.3.4.jar:/home/user974/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.12/istack-commons-runtime-3.0.12.jar:/home/user974/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, java.vendor.url=https://java.oracle.com/, user.timezone=Asia/Kolkata, java.vm.specification.version=15, os.name=Linux, javax.persistence.validation.mode=AUTO, sun.java.launcher=SUN_STANDARD, user.country=IN, sun.boot.library.path=/usr/local/spring/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.linux.x86_64_15.0.2.v20210201-0955/jre/lib, sun.java.command=com.numino.sbjs.SbjsApplication, javax.persistence.nonJtaDataSource=HikariDataSource (HikariPool-1), hibernate.transaction.jta.platform=org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform@5e98032e, javax.persistence.sharedCache.mode=UNSPECIFIED, jdk.debug=release, sun.cpu.endian=little, user.home=/home/user974, user.language=en, java.specification.vendor=Oracle Corporation, java.version.date=2021-01-19, java.home=/usr/local/spring/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.linux.x86_64_15.0.2.v20210201-0955/jre, file.separator=/, java.vm.compressedOopsMode=Zero based, line.separator=\n, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, FILE_LOG_CHARSET=UTF-8, hibernate.transaction.coordinator_class=class org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl, java.awt.headless=true, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=15.0.2+7-27, user.name=user974, path.separator=:, os.version=5.4.0-73-generic, java.runtime.name=OpenJDK Runtime Environment, file.encoding=UTF-8, hibernate.ejb.persistenceUnitName=default, spring.beaninfo.ignore=true, java.vm.name=OpenJDK 64-Bit Server VM, hibernate.show_sql=true, java.vendor.url.bug=https://bugreport.java.com/bugreport/, java.io.tmpdir=/tmp, java.version=15.0.2, hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy, user.dir=/media/user974/New Volume/Office/Projects/POCs/java-assignments/sbjs, os.arch=amd64, java.vm.specification.name=Java Virtual Machine Specification, PID=19273, CONSOLE_LOG_CHARSET=UTF-8, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.registry.StandardServiceRegistryBuilder$1@4fe8f2ae, java.library.path=/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib, java.vendor=Oracle Corporation, java.vm.info=mixed mode, java.vm.version=15.0.2+7-27, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeLittle, hibernate.archive.scanner=org.hibernate.boot.archive.scan.internal.DisabledScanner, hibernate.connection.datasource=HikariDataSource (HikariPool-1), java.class.version=59.0}",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:08.087Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.secure.spi.JaccIntegrator",
+  "message" : "Skipping JACC integration as it was not enabled",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:08.088Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.internal.SessionFactoryImpl",
+  "message" : "Instantiated session factory",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:08.089Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.type.spi.TypeConfiguration$Scope",
+  "message" : "Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@34edd065] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@64c8fcfb]",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:08.147Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.boot.internal.ClassLoaderAccessImpl",
+  "message" : "Not known whether passed class name [com.numino.sbjs.dbmodel.AsyncEvents] is safe",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:08.148Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.boot.internal.ClassLoaderAccessImpl",
+  "message" : "No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.numino.sbjs.dbmodel.AsyncEvents",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:08.451Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.persister.entity.AbstractEntityPersister",
+  "message" : "Static SQL for entity: com.numino.sbjs.dbmodel.AsyncEvents",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:08.451Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.persister.entity.AbstractEntityPersister",
+  "message" : " Version select: select row_id from asynch_events where row_id =?",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:08.452Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.persister.entity.AbstractEntityPersister",
+  "message" : " Snapshot select: select asyncevent_.row_id, asyncevent_.event_subtype as event_su2_0_, asyncevent_.event_type as event_ty3_0_, asyncevent_.status as status4_0_ from asynch_events asyncevent_ where asyncevent_.row_id=?",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:08.452Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.persister.entity.AbstractEntityPersister",
+  "message" : " Insert 0: insert into asynch_events (event_subtype, event_type, status, row_id) values (?, ?, ?, ?)",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:08.453Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.persister.entity.AbstractEntityPersister",
+  "message" : " Update 0: update asynch_events set event_subtype=?, event_type=?, status=? where row_id=?",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:08.453Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.persister.entity.AbstractEntityPersister",
+  "message" : " Delete 0: delete from asynch_events where row_id=?",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:08.487Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "mdc" : {
+    "hibernateLoadPlanWalkPath" : ""
+  },
+  "logger" : "org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl",
+  "message" : "Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@63bca84d]",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:08.490Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "mdc" : {
+    "hibernateLoadPlanWalkPath" : "com.numino.sbjs.dbmodel.AsyncEvents"
+  },
+  "logger" : "org.hibernate.persister.walking.spi.MetamodelGraphWalker",
+  "message" : "Visiting attribute path : event_subtype",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:08.491Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "mdc" : {
+    "hibernateLoadPlanWalkPath" : "com.numino.sbjs.dbmodel.AsyncEvents"
+  },
+  "logger" : "org.hibernate.persister.walking.spi.MetamodelGraphWalker",
+  "message" : "Visiting attribute path : event_type",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:08.492Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "mdc" : {
+    "hibernateLoadPlanWalkPath" : "com.numino.sbjs.dbmodel.AsyncEvents"
+  },
+  "logger" : "org.hibernate.persister.walking.spi.MetamodelGraphWalker",
+  "message" : "Visiting attribute path : status",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:08.492Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy",
+  "message" : "Building LoadPlan...",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:08.509Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor",
+  "message" : "processing queryspace <gen:0>",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:08.519Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter",
+  "message" : "LoadPlan(entity=com.numino.sbjs.dbmodel.AsyncEvents)\n    - Returns\n       - EntityReturnImpl(entity=com.numino.sbjs.dbmodel.AsyncEvents, querySpaceUid=<gen:0>, path=com.numino.sbjs.dbmodel.AsyncEvents)\n    - QuerySpaces\n       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.numino.sbjs.dbmodel.AsyncEvents)\n          - SQL table alias mapping - asyncevent0_\n          - alias suffix - 0_\n          - suffixed key columns - {row_id1_0_0_}\n",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:08.522Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.loader.entity.plan.EntityLoader",
+  "message" : "Static select for entity com.numino.sbjs.dbmodel.AsyncEvents [NONE]: select asyncevent0_.row_id as row_id1_0_0_, asyncevent0_.event_subtype as event_su2_0_0_, asyncevent0_.event_type as event_ty3_0_0_, asyncevent0_.status as status4_0_0_ from asynch_events asyncevent0_ where asyncevent0_.row_id=?",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:08.561Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator",
+  "message" : "No actions specified; doing nothing",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:08.562Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator",
+  "message" : "HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:08.564Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.query.spi.NamedQueryRepository",
+  "message" : "Checking 0 named HQL queries",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:08.565Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.query.spi.NamedQueryRepository",
+  "message" : "Checking 0 named SQL queries",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:08.581Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.internal.SessionFactoryRegistry",
+  "message" : "Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@717a8a76",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:08.582Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.internal.SessionFactoryRegistry",
+  "message" : "Registering SessionFactory: 42419306-3cdd-41bd-a234-8707449adf43 (<unnamed>)",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:08.582Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.internal.SessionFactoryRegistry",
+  "message" : "Not binding SessionFactory to JNDI, no JNDI name configured",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:08.584Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean",
+  "message" : "Initialized JPA EntityManagerFactory for persistence unit 'default'",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:08.927Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.hibernate.stat.internal.StatisticsInitiator",
+  "message" : "Statistics initialized [enabled=false]",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:09.175Z",
+  "level" : "INFO",
+  "thread" : "dispatch-1",
+  "logger" : "com.numino.sbjs.jobs.ScheduledJobs",
+  "message" : "<><><><><><><> 1 <> Mon Jun 07 00:30:09 IST 2021",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:09.328Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "com.numino.sbjs.SbjsApplication",
+  "message" : "Started SbjsApplication in 9.177 seconds (JVM running for 10.16)",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:09.330Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.boot.availability.ApplicationAvailabilityBean",
+  "message" : "Application availability state LivenessState changed to CORRECT",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:09.332Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.boot.availability.ApplicationAvailabilityBean",
+  "message" : "Application availability state ReadinessState changed to ACCEPTING_TRAFFIC",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:09.374Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "com.numino.sbjs.SbjsApplication",
+  "message" : "Starting SbjsApplication using Java 15.0.2 on snvb-ubu with PID 19273 (/media/user974/New Volume/Office/Projects/POCs/java-assignments/sbjs/target/classes started by user974 in /media/user974/New Volume/Office/Projects/POCs/java-assignments/sbjs)",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:09.375Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.numino.sbjs.SbjsApplication",
+  "message" : "Running with Spring Boot v2.5.0, Spring v5.3.7",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:09.375Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "com.numino.sbjs.SbjsApplication",
+  "message" : "No active profile set, falling back to default profiles: default",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:09.395Z",
+  "level" : "WARN",
+  "thread" : "main",
+  "logger" : "org.springframework.context.annotation.AnnotationConfigApplicationContext",
+  "message" : "Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'pollScheduler': Unsatisfied dependency expressed through field 'execProps'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.numino.sbjs.config.ExecutorProperties' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:09.438Z",
+  "level" : "ERROR",
+  "thread" : "main",
+  "logger" : "org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter",
+  "message" : "\n\n***************************\nAPPLICATION FAILED TO START\n***************************\n\nDescription:\n\nField execProps in com.numino.sbjs.executor.PollScheduler required a bean of type 'com.numino.sbjs.config.ExecutorProperties' that could not be found.\n\nThe injection point has the following annotations:\n\t- @org.springframework.beans.factory.annotation.Autowired(required=true)\n\n\nAction:\n\nConsider defining a bean of type 'com.numino.sbjs.config.ExecutorProperties' in your configuration.\n",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:09.722Z",
+  "level" : "DEBUG",
+  "thread" : "dispatch-1",
+  "logger" : "org.hibernate.engine.transaction.internal.TransactionImpl",
+  "message" : "On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:09.723Z",
+  "level" : "DEBUG",
+  "thread" : "dispatch-1",
+  "logger" : "org.hibernate.engine.transaction.internal.TransactionImpl",
+  "message" : "begin",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:09.997Z",
+  "level" : "DEBUG",
+  "thread" : "dispatch-1",
+  "logger" : "org.hibernate.hql.internal.QueryTranslatorFactoryInitiator",
+  "message" : "QueryTranslatorFactory: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@afce745",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:10.026Z",
+  "level" : "DEBUG",
+  "thread" : "dispatch-1",
+  "logger" : "org.hibernate.hql.internal.ast.QueryTranslatorImpl",
+  "message" : "parse() - HQL: select count(*) from com.numino.sbjs.dbmodel.AsyncEvents x",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:10.031Z",
+  "level" : "DEBUG",
+  "thread" : "dispatch-1",
+  "logger" : "org.hibernate.hql.internal.ast.ErrorTracker",
+  "message" : "throwQueryException() : no errors",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:10.040Z",
+  "level" : "DEBUG",
+  "thread" : "dispatch-1",
+  "logger" : "org.hibernate.hql.internal.ast.QueryTranslatorImpl",
+  "message" : "--- HQL AST ---\n \\-[QUERY] Node: 'query'\n    \\-[SELECT_FROM] Node: 'SELECT_FROM'\n       +-[FROM] Node: 'from'\n       |  \\-[RANGE] Node: 'RANGE'\n       |     +-[DOT] Node: '.'\n       |     |  +-[DOT] Node: '.'\n       |     |  |  +-[DOT] Node: '.'\n       |     |  |  |  +-[DOT] Node: '.'\n       |     |  |  |  |  +-[IDENT] Node: 'com'\n       |     |  |  |  |  \\-[IDENT] Node: 'numino'\n       |     |  |  |  \\-[IDENT] Node: 'sbjs'\n       |     |  |  \\-[IDENT] Node: 'dbmodel'\n       |     |  \\-[IDENT] Node: 'AsyncEvents'\n       |     \\-[ALIAS] Node: 'x'\n       \\-[SELECT] Node: 'select'\n          \\-[COUNT] Node: 'count'\n             \\-[ROW_STAR] Node: '*'\n",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:10.063Z",
+  "level" : "DEBUG",
+  "thread" : "dispatch-1",
+  "logger" : "org.hibernate.hql.internal.antlr.HqlSqlBaseWalker",
+  "message" : "select << begin [level=1, statement=select]",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:10.082Z",
+  "level" : "DEBUG",
+  "thread" : "dispatch-1",
+  "logger" : "org.hibernate.hql.internal.ast.tree.FromElement",
+  "message" : "FromClause{level=1} : com.numino.sbjs.dbmodel.AsyncEvents (x) -> asyncevent0_",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:10.085Z",
+  "level" : "DEBUG",
+  "thread" : "dispatch-1",
+  "logger" : "org.hibernate.hql.internal.antlr.HqlSqlBaseWalker",
+  "message" : "select : finishing up [level=1, statement=select]",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:10.086Z",
+  "level" : "DEBUG",
+  "thread" : "dispatch-1",
+  "logger" : "org.hibernate.hql.internal.ast.HqlSqlWalker",
+  "message" : "processQuery() :  ( SELECT ( {select clause} ( count * ) ) ( FromClause{level=1} asynch_events asyncevent0_ ) )",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:10.090Z",
+  "level" : "DEBUG",
+  "thread" : "dispatch-1",
+  "logger" : "org.hibernate.hql.internal.ast.util.JoinProcessor",
+  "message" : "Tables referenced from query nodes:\n \\-QueryNode\n    +-SelectClause\n    |  +-CountNode\n    |  |  \\-SqlNode\n    |  \\-SqlNode\n    \\-FromClause\n       \\-FromElement\n",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:10.095Z",
+  "level" : "DEBUG",
+  "thread" : "dispatch-1",
+  "logger" : "org.hibernate.hql.internal.ast.util.JoinProcessor",
+  "message" : "Using FROM fragment [asynch_events asyncevent0_]",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:10.096Z",
+  "level" : "DEBUG",
+  "thread" : "dispatch-1",
+  "logger" : "org.hibernate.hql.internal.antlr.HqlSqlBaseWalker",
+  "message" : "select >> end [level=1, statement=select]",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:10.097Z",
+  "level" : "DEBUG",
+  "thread" : "dispatch-1",
+  "logger" : "org.hibernate.hql.internal.ast.QueryTranslatorImpl",
+  "message" : "--- SQL AST ---\n \\-[SELECT] QueryNode: 'SELECT'  querySpaces (asynch_events)\n    +-[SELECT_CLAUSE] SelectClause: '{select clause}'\n    |  +-[COUNT] CountNode: 'count'\n    |  |  \\-[ROW_STAR] SqlNode: '*'\n    |  \\-[SELECT_COLUMNS] SqlNode: ' as col_0_0_'\n    \\-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[x], fromElementByTableAlias=[asyncevent0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}\n       \\-[FROM_FRAGMENT] FromElement: 'asynch_events asyncevent0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=x,role=null,tableName=asynch_events,tableAlias=asyncevent0_,origin=null,columns={,className=com.numino.sbjs.dbmodel.AsyncEvents}}\n",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:10.097Z",
+  "level" : "DEBUG",
+  "thread" : "dispatch-1",
+  "logger" : "org.hibernate.hql.internal.ast.ErrorTracker",
+  "message" : "throwQueryException() : no errors",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:10.104Z",
+  "level" : "DEBUG",
+  "thread" : "dispatch-1",
+  "logger" : "org.hibernate.hql.internal.ast.QueryTranslatorImpl",
+  "message" : "HQL: select count(*) from com.numino.sbjs.dbmodel.AsyncEvents x",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:10.105Z",
+  "level" : "DEBUG",
+  "thread" : "dispatch-1",
+  "logger" : "org.hibernate.hql.internal.ast.QueryTranslatorImpl",
+  "message" : "SQL: select count(*) as col_0_0_ from asynch_events asyncevent0_",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:10.105Z",
+  "level" : "DEBUG",
+  "thread" : "dispatch-1",
+  "logger" : "org.hibernate.hql.internal.ast.ErrorTracker",
+  "message" : "throwQueryException() : no errors",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:10.123Z",
+  "level" : "DEBUG",
+  "thread" : "dispatch-1",
+  "logger" : "org.hibernate.SQL",
+  "message" : "select count(*) as col_0_0_ from asynch_events asyncevent0_",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:10.394Z",
+  "level" : "DEBUG",
+  "thread" : "dispatch-1",
+  "logger" : "org.hibernate.loader.Loader",
+  "message" : "Result set row: 0",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:10.395Z",
+  "level" : "DEBUG",
+  "thread" : "dispatch-1",
+  "logger" : "org.hibernate.loader.Loader",
+  "message" : "Result row: ",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:10.405Z",
+  "level" : "DEBUG",
+  "thread" : "dispatch-1",
+  "logger" : "org.hibernate.engine.transaction.internal.TransactionImpl",
+  "message" : "committing",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:11.003Z",
+  "level" : "DEBUG",
+  "thread" : "HikariPool-1 connection adder",
+  "logger" : "com.zaxxer.hikari.pool.HikariPool",
+  "message" : "HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3268e29c",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:11.236Z",
+  "level" : "DEBUG",
+  "thread" : "dispatch-1",
+  "logger" : "org.hibernate.SQL",
+  "message" : "select * from asynch_events",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:11.490Z",
+  "level" : "DEBUG",
+  "thread" : "dispatch-1",
+  "logger" : "org.hibernate.loader.Loader",
+  "message" : "Result set row: 0",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:11.496Z",
+  "level" : "DEBUG",
+  "thread" : "dispatch-1",
+  "logger" : "org.hibernate.loader.Loader",
+  "message" : "Result row: EntityKey[com.numino.sbjs.dbmodel.AsyncEvents#1-H]",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:11.504Z",
+  "level" : "DEBUG",
+  "thread" : "dispatch-1",
+  "logger" : "org.hibernate.engine.internal.TwoPhaseLoad",
+  "message" : "Resolving attributes for [com.numino.sbjs.dbmodel.AsyncEvents#1-H]",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:11.505Z",
+  "level" : "DEBUG",
+  "thread" : "dispatch-1",
+  "logger" : "org.hibernate.engine.internal.TwoPhaseLoad",
+  "message" : "Processing attribute `event_subtype` : value = SUB_REPORT",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:11.506Z",
+  "level" : "DEBUG",
+  "thread" : "dispatch-1",
+  "logger" : "org.hibernate.engine.internal.TwoPhaseLoad",
+  "message" : "Attribute (`event_subtype`)  - enhanced for lazy-loading? - false",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:11.506Z",
+  "level" : "DEBUG",
+  "thread" : "dispatch-1",
+  "logger" : "org.hibernate.engine.internal.TwoPhaseLoad",
+  "message" : "Processing attribute `event_type` : value = REPORT",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:11.507Z",
+  "level" : "DEBUG",
+  "thread" : "dispatch-1",
+  "logger" : "org.hibernate.engine.internal.TwoPhaseLoad",
+  "message" : "Attribute (`event_type`)  - enhanced for lazy-loading? - false",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:11.507Z",
+  "level" : "DEBUG",
+  "thread" : "dispatch-1",
+  "logger" : "org.hibernate.engine.internal.TwoPhaseLoad",
+  "message" : "Processing attribute `status` : value = new",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:11.508Z",
+  "level" : "DEBUG",
+  "thread" : "dispatch-1",
+  "logger" : "org.hibernate.engine.internal.TwoPhaseLoad",
+  "message" : "Attribute (`status`)  - enhanced for lazy-loading? - false",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:11.509Z",
+  "level" : "DEBUG",
+  "thread" : "dispatch-1",
+  "logger" : "org.hibernate.engine.internal.TwoPhaseLoad",
+  "message" : "Done materializing entity [com.numino.sbjs.dbmodel.AsyncEvents#1-H]",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:11.766Z",
+  "level" : "DEBUG",
+  "thread" : "dispatch-1",
+  "logger" : "org.hibernate.engine.transaction.internal.TransactionImpl",
+  "message" : "On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:11.767Z",
+  "level" : "DEBUG",
+  "thread" : "dispatch-1",
+  "logger" : "org.hibernate.engine.transaction.internal.TransactionImpl",
+  "message" : "begin",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:12.025Z",
+  "level" : "DEBUG",
+  "thread" : "dispatch-1",
+  "logger" : "org.hibernate.SQL",
+  "message" : "select count(*) as col_0_0_ from asynch_events asyncevent0_",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:12.275Z",
+  "level" : "DEBUG",
+  "thread" : "dispatch-1",
+  "logger" : "org.hibernate.loader.Loader",
+  "message" : "Result set row: 0",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:12.276Z",
+  "level" : "DEBUG",
+  "thread" : "dispatch-1",
+  "logger" : "org.hibernate.loader.Loader",
+  "message" : "Result row: ",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:12.277Z",
+  "level" : "DEBUG",
+  "thread" : "dispatch-1",
+  "logger" : "org.hibernate.engine.transaction.internal.TransactionImpl",
+  "message" : "committing",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:13.022Z",
+  "level" : "INFO",
+  "thread" : "dispatch-1",
+  "logger" : "com.numino.sbjs.jobs.ScheduledJobs",
+  "message" : "()()() 2 () Mon Jun 07 00:30:13 IST 2021",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:00:14.263Z",
+  "level" : "DEBUG",
+  "thread" : "HikariPool-1 connection adder",
+  "logger" : "com.zaxxer.hikari.pool.HikariPool",
+  "message" : "HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@686db184",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:40.946Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "com.numino.sbjs.SbjsApplication",
+  "message" : "Starting SbjsApplication using Java 15.0.2 on snvb-ubu with PID 19661 (/media/user974/New Volume/Office/Projects/POCs/java-assignments/sbjs/target/classes started by user974 in /media/user974/New Volume/Office/Projects/POCs/java-assignments/sbjs)",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:40.968Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.numino.sbjs.SbjsApplication",
+  "message" : "Running with Spring Boot v2.5.0, Spring v5.3.7",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:40.969Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "com.numino.sbjs.SbjsApplication",
+  "message" : "No active profile set, falling back to default profiles: default",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:41.763Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.data.repository.config.RepositoryConfigurationDelegate",
+  "message" : "Bootstrapping Spring Data JPA repositories in DEFAULT mode.",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:41.881Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.data.repository.config.RepositoryConfigurationDelegate",
+  "message" : "Finished Spring Data repository scanning in 99 ms. Found 1 JPA repository interfaces.",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:42.213Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker",
+  "message" : "Bean 'executorProperties' of type [com.numino.sbjs.config.ExecutorProperties$$EnhancerBySpringCGLIB$$e4f55c2d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:42.215Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker",
+  "message" : "Bean 'jobExecutor' of type [com.numino.sbjs.executor.JobExecutor$$EnhancerBySpringCGLIB$$126fe922] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:42.381Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "Driver class org.hibernate.dialect.MySQL5InnoDBDialect found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@799f7e29",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:42.422Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.jboss.logging",
+  "message" : "Logging Provider: org.jboss.logging.Slf4jLoggerProvider",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:43.147Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "HikariPool-1 - configuration:",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:43.150Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "allowPoolSuspension................................false",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:43.151Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "autoCommit................................true",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:43.152Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "catalog................................none",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:43.153Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "connectionInitSql................................none",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:43.153Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "connectionTestQuery................................none",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:43.154Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "connectionTimeout................................30000",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:43.154Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "dataSource................................none",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:43.155Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "dataSourceClassName................................none",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:43.156Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "dataSourceJNDI................................none",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:43.157Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "dataSourceProperties................................{password=<masked>}",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:43.158Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "driverClassName................................\"org.hibernate.dialect.MySQL5InnoDBDialect\"",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:43.159Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "exceptionOverrideClassName................................none",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:43.159Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "healthCheckProperties................................{}",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:43.160Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "healthCheckRegistry................................none",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:43.161Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "idleTimeout................................600000",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:43.162Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "initializationFailTimeout................................1",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:43.163Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "isolateInternalQueries................................false",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:43.165Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "jdbcUrl................................jdbc:mysql://trainingdbinstance.cysfinn4a8xf.us-west-2.rds.amazonaws.com:3306/amreplica",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:43.167Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "keepaliveTime................................0",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:43.169Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "leakDetectionThreshold................................0",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:43.171Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "maxLifetime................................1800000",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:43.172Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "maximumPoolSize................................10",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:43.174Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "metricRegistry................................none",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:43.175Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "metricsTrackerFactory................................none",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:43.177Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "minimumIdle................................10",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:43.178Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "password................................<masked>",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:43.181Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "poolName................................\"HikariPool-1\"",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:43.183Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "readOnly................................false",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:43.185Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "registerMbeans................................false",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:43.186Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "scheduledExecutor................................none",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:43.186Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "schema................................none",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:43.187Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "threadFactory................................internal",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:43.188Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "transactionIsolation................................default",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:43.188Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "username................................\"admin\"",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:43.189Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariConfig",
+  "message" : "validationTimeout................................5000",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:43.190Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariDataSource",
+  "message" : "HikariPool-1 - Starting...",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:43.206Z",
+  "level" : "WARN",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.util.DriverDataSource",
+  "message" : "Registered driver with driverClassName=org.hibernate.dialect.MySQL5InnoDBDialect was not found, trying direct instantiation.",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:43.207Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.util.DriverDataSource",
+  "message" : "Driver class org.hibernate.dialect.MySQL5InnoDBDialect found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@799f7e29",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:43.212Z",
+  "level" : "WARN",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.util.DriverDataSource",
+  "message" : "Failed to create instance of driver class org.hibernate.dialect.MySQL5InnoDBDialect, trying jdbcUrl resolution",
+  "context" : "default",
+  "exception" : "java.lang.ClassCastException: class org.hibernate.dialect.MySQL5InnoDBDialect cannot be cast to class java.sql.Driver (org.hibernate.dialect.MySQL5InnoDBDialect is in unnamed module of loader 'app'; java.sql.Driver is in module java.sql of loader 'platform')\n\tat com.zaxxer.hikari.util.DriverDataSource.<init>(DriverDataSource.java:95)\n\tat com.zaxxer.hikari.pool.PoolBase.initializeDataSource(PoolBase.java:331)\n\tat com.zaxxer.hikari.pool.PoolBase.<init>(PoolBase.java:114)\n\tat com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:108)\n\tat com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)\n\tat org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)\n\tat org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)\n\tat org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)\n\tat org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)\n\tat org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)\n\tat org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)\n\tat org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)\n\tat org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)\n\tat org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)\n\tat org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)\n\tat org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)\n\tat org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)\n\tat org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176)\n\tat org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)\n\tat org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)\n\tat org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)\n\tat org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)\n\tat org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)\n\tat org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)\n\tat org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)\n\tat org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)\n\tat org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)\n\tat org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)\n\tat org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)\n\tat org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)\n\tat org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)\n\tat org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)\n\tat org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)\n\tat org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)\n\tat org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)\n\tat org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)\n\tat org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)\n\tat org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)\n\tat org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:438)\n\tat org.springframework.boot.SpringApplication.run(SpringApplication.java:337)\n\tat org.springframework.boot.SpringApplication.run(SpringApplication.java:1336)\n\tat org.springframework.boot.SpringApplication.run(SpringApplication.java:1325)\n\tat com.numino.sbjs.SbjsApplication.main(SbjsApplication.java:32)\n"
+}
+{
+  "timestamp" : "2021-06-06T19:03:43.235Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.util.DriverDataSource",
+  "message" : "Loaded driver with class name com.mysql.cj.jdbc.Driver for jdbcUrl=jdbc:mysql://trainingdbinstance.cysfinn4a8xf.us-west-2.rds.amazonaws.com:3306/amreplica",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:47.735Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.pool.HikariPool",
+  "message" : "HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@29962b2f",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:47.739Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "com.zaxxer.hikari.HikariDataSource",
+  "message" : "HikariPool-1 - Start completed.",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:47.839Z",
+  "level" : "DEBUG",
+  "thread" : "HikariPool-1 housekeeper",
+  "logger" : "com.zaxxer.hikari.pool.HikariPool",
+  "message" : "HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:48.603Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean",
+  "message" : "Initialized JPA EntityManagerFactory for persistence unit 'default'",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:49.223Z",
+  "level" : "INFO",
+  "thread" : "dispatch-1",
+  "logger" : "com.numino.sbjs.jobs.ScheduledJobs",
+  "message" : "<><><><><><><> 1 <> Mon Jun 07 00:33:49 IST 2021",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:49.381Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "com.numino.sbjs.SbjsApplication",
+  "message" : "Started SbjsApplication in 9.012 seconds (JVM running for 10.023)",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:49.383Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.boot.availability.ApplicationAvailabilityBean",
+  "message" : "Application availability state LivenessState changed to CORRECT",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:49.386Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.boot.availability.ApplicationAvailabilityBean",
+  "message" : "Application availability state ReadinessState changed to ACCEPTING_TRAFFIC",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:49.433Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "com.numino.sbjs.SbjsApplication",
+  "message" : "Starting SbjsApplication using Java 15.0.2 on snvb-ubu with PID 19661 (/media/user974/New Volume/Office/Projects/POCs/java-assignments/sbjs/target/classes started by user974 in /media/user974/New Volume/Office/Projects/POCs/java-assignments/sbjs)",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:49.433Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.numino.sbjs.SbjsApplication",
+  "message" : "Running with Spring Boot v2.5.0, Spring v5.3.7",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:49.434Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "com.numino.sbjs.SbjsApplication",
+  "message" : "No active profile set, falling back to default profiles: default",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:49.454Z",
+  "level" : "WARN",
+  "thread" : "main",
+  "logger" : "org.springframework.context.annotation.AnnotationConfigApplicationContext",
+  "message" : "Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'pollScheduler': Unsatisfied dependency expressed through field 'execProps'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.numino.sbjs.config.ExecutorProperties' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:49.495Z",
+  "level" : "ERROR",
+  "thread" : "main",
+  "logger" : "org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter",
+  "message" : "\n\n***************************\nAPPLICATION FAILED TO START\n***************************\n\nDescription:\n\nField execProps in com.numino.sbjs.executor.PollScheduler required a bean of type 'com.numino.sbjs.config.ExecutorProperties' that could not be found.\n\nThe injection point has the following annotations:\n\t- @org.springframework.beans.factory.annotation.Autowired(required=true)\n\n\nAction:\n\nConsider defining a bean of type 'com.numino.sbjs.config.ExecutorProperties' in your configuration.\n",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:51.133Z",
+  "level" : "DEBUG",
+  "thread" : "HikariPool-1 connection adder",
+  "logger" : "com.zaxxer.hikari.pool.HikariPool",
+  "message" : "HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4e7b18dd",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:03:53.026Z",
+  "level" : "INFO",
+  "thread" : "dispatch-1",
+  "logger" : "com.numino.sbjs.jobs.ScheduledJobs",
+  "message" : "()()() 2 () Mon Jun 07 00:33:53 IST 2021",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:07:22.257Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "com.numino.sbjs.SbjsApplication",
+  "message" : "Starting SbjsApplication using Java 15.0.2 on snvb-ubu with PID 19904 (/media/user974/New Volume/Office/Projects/POCs/java-assignments/sbjs/target/classes started by user974 in /media/user974/New Volume/Office/Projects/POCs/java-assignments/sbjs)",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:07:22.284Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.numino.sbjs.SbjsApplication",
+  "message" : "Running with Spring Boot v2.5.0, Spring v5.3.7",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:07:22.284Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "com.numino.sbjs.SbjsApplication",
+  "message" : "No active profile set, falling back to default profiles: default",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:07:23.108Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.data.repository.config.RepositoryConfigurationDelegate",
+  "message" : "Bootstrapping Spring Data JPA repositories in DEFAULT mode.",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:07:23.222Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.data.repository.config.RepositoryConfigurationDelegate",
+  "message" : "Finished Spring Data repository scanning in 95 ms. Found 1 JPA repository interfaces.",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:07:23.548Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker",
+  "message" : "Bean 'executorProperties' of type [com.numino.sbjs.config.ExecutorProperties$$EnhancerBySpringCGLIB$$6fcc623d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:07:23.550Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker",
+  "message" : "Bean 'jobExecutor' of type [com.numino.sbjs.executor.JobExecutor$$EnhancerBySpringCGLIB$$9d46ef32] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:07:23.765Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.jboss.logging",
+  "message" : "Logging Provider: org.jboss.logging.Slf4jLoggerProvider",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:07:29.971Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean",
+  "message" : "Initialized JPA EntityManagerFactory for persistence unit 'default'",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:07:30.574Z",
+  "level" : "INFO",
+  "thread" : "dispatch-1",
+  "logger" : "com.numino.sbjs.jobs.ScheduledJobs",
+  "message" : "<><><><><><><> 1 <> Mon Jun 07 00:37:30 IST 2021",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:07:30.758Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "com.numino.sbjs.SbjsApplication",
+  "message" : "Started SbjsApplication in 9.106 seconds (JVM running for 10.137)",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:07:30.761Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.boot.availability.ApplicationAvailabilityBean",
+  "message" : "Application availability state LivenessState changed to CORRECT",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:07:30.764Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.boot.availability.ApplicationAvailabilityBean",
+  "message" : "Application availability state ReadinessState changed to ACCEPTING_TRAFFIC",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:07:34.378Z",
+  "level" : "INFO",
+  "thread" : "dispatch-1",
+  "logger" : "com.numino.sbjs.jobs.ScheduledJobs",
+  "message" : "()()() 2 () Mon Jun 07 00:37:34 IST 2021",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:07:39.380Z",
+  "level" : "INFO",
+  "thread" : "dispatch-1",
+  "logger" : "com.numino.sbjs.jobs.ScheduledJobs",
+  "message" : "<><><><><><><> 1 <> Mon Jun 07 00:37:39 IST 2021",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:07:42.846Z",
+  "level" : "INFO",
+  "thread" : "dispatch-1",
+  "logger" : "com.numino.sbjs.jobs.ScheduledJobs",
+  "message" : "()()() 2 () Mon Jun 07 00:37:42 IST 2021",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:07:47.848Z",
+  "level" : "INFO",
+  "thread" : "dispatch-2",
+  "logger" : "com.numino.sbjs.jobs.ScheduledJobs",
+  "message" : "<><><><><><><> 1 <> Mon Jun 07 00:37:47 IST 2021",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:07:51.321Z",
+  "level" : "INFO",
+  "thread" : "dispatch-2",
+  "logger" : "com.numino.sbjs.jobs.ScheduledJobs",
+  "message" : "()()() 2 () Mon Jun 07 00:37:51 IST 2021",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:10:54.634Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "com.numino.sbjs.SbjsApplication",
+  "message" : "Starting SbjsApplication using Java 15.0.2 on snvb-ubu with PID 20187 (/media/user974/New Volume/Office/Projects/POCs/java-assignments/sbjs/target/classes started by user974 in /media/user974/New Volume/Office/Projects/POCs/java-assignments/sbjs)",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:10:54.657Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "com.numino.sbjs.SbjsApplication",
+  "message" : "Running with Spring Boot v2.5.0, Spring v5.3.7",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:10:54.658Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "com.numino.sbjs.SbjsApplication",
+  "message" : "No active profile set, falling back to default profiles: default",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:10:55.495Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.data.repository.config.RepositoryConfigurationDelegate",
+  "message" : "Bootstrapping Spring Data JPA repositories in DEFAULT mode.",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:10:55.605Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.data.repository.config.RepositoryConfigurationDelegate",
+  "message" : "Finished Spring Data repository scanning in 94 ms. Found 1 JPA repository interfaces.",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:10:55.991Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker",
+  "message" : "Bean 'executorProperties' of type [com.numino.sbjs.config.ExecutorProperties$$EnhancerBySpringCGLIB$$a69732e5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:10:55.993Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker",
+  "message" : "Bean 'jobExecutor' of type [com.numino.sbjs.executor.JobExecutor$$EnhancerBySpringCGLIB$$d411bfda] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:10:56.239Z",
+  "level" : "DEBUG",
+  "thread" : "main",
+  "logger" : "org.jboss.logging",
+  "message" : "Logging Provider: org.jboss.logging.Slf4jLoggerProvider",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:11:02.451Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean",
+  "message" : "Initialized JPA EntityManagerFactory for persistence unit 'default'",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:11:03.005Z",
+  "level" : "INFO",
+  "thread" : "dispatch-1",
+  "logger" : "com.numino.sbjs.jobs.ScheduledJobs",
+  "message" : "<><><><><><><> 1 <> Mon Jun 07 00:41:03 IST 2021",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:11:03.170Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "com.numino.sbjs.SbjsApplication",
+  "message" : "Started SbjsApplication in 9.098 seconds (JVM running for 10.066)",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:11:03.175Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.boot.availability.ApplicationAvailabilityBean",
+  "message" : "Application availability state LivenessState changed to CORRECT",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:11:03.180Z",
+  "level" : "INFO",
+  "thread" : "main",
+  "logger" : "org.springframework.boot.availability.ApplicationAvailabilityBean",
+  "message" : "Application availability state ReadinessState changed to ACCEPTING_TRAFFIC",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:11:06.793Z",
+  "level" : "INFO",
+  "thread" : "dispatch-1",
+  "logger" : "com.numino.sbjs.jobs.ScheduledJobs",
+  "message" : "()()() 2 () Mon Jun 07 00:41:06 IST 2021",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:11:11.795Z",
+  "level" : "INFO",
+  "thread" : "dispatch-1",
+  "logger" : "com.numino.sbjs.jobs.ScheduledJobs",
+  "message" : "<><><><><><><> 1 <> Mon Jun 07 00:41:11 IST 2021",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:11:15.276Z",
+  "level" : "INFO",
+  "thread" : "dispatch-1",
+  "logger" : "com.numino.sbjs.jobs.ScheduledJobs",
+  "message" : "()()() 2 () Mon Jun 07 00:41:15 IST 2021",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:11:20.278Z",
+  "level" : "INFO",
+  "thread" : "dispatch-2",
+  "logger" : "com.numino.sbjs.jobs.ScheduledJobs",
+  "message" : "<><><><><><><> 1 <> Mon Jun 07 00:41:20 IST 2021",
+  "context" : "default"
+}
+{
+  "timestamp" : "2021-06-06T19:11:23.761Z",
+  "level" : "INFO",
+  "thread" : "dispatch-2",
+  "logger" : "com.numino.sbjs.jobs.ScheduledJobs",
+  "message" : "()()() 2 () Mon Jun 07 00:41:23 IST 2021",
+  "context" : "default"
+}

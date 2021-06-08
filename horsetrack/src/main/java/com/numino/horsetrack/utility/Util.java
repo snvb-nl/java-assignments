@@ -10,23 +10,7 @@ import org.slf4j.LoggerFactory;
 
 public class Util {
 	private static Logger logger = LoggerFactory.getLogger(Util.class);
-/*
-	public static void ln(Object s) {
-		System.out.println(s);
-	}
 
-	public static void o(Object s) {
-		System.out.print(s);
-	}
-
-	public static void f(String s, Object... args) {
-		System.out.printf(s + "\n", args);
-	}
-
-	public static String Format(String s, Object... args) {
-		return String.format(s, args);
-	}
-*/
 	/**
 	 * Print text with new line
 	 *
